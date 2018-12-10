@@ -1,0 +1,7 @@
+#lock gnome-theme
+
+/org/gnome/desktop/interface/icon-theme
+/org/gnome/desktop/interface/gtk-theme
+/org/gnome/desktop/interface/cursor-theme
+/org/gnome/desktop/interface/monospace-font-name
+/org/gnome/desktop/wm/preferences/theme

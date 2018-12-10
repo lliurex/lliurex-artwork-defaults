@@ -1,0 +1,8 @@
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/lliurex/lliurex16-enterprise.png'
+picture-options="stretched"
+show-desktop-icons=true
+
+
+[org/gnome/metacity]
+compositing-manager=true

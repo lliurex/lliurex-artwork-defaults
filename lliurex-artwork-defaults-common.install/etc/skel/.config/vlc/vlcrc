@@ -1,0 +1,4027 @@
+﻿###
+###  VLC media player - version 1.0.6 Goldeneye - (c) 1996-2010 the VideoLAN team
+###
+
+###
+### lines beginning with a '#' character are comments
+###
+
+[mux_ts] # Multiplexor TS (libdvbpsi)
+
+# PID del vídeo (integer)
+#sout-ts-pid-video=0
+
+# PID de l'àudio (integer)
+#sout-ts-pid-audio=0
+
+# SPU PID (integer)
+#sout-ts-pid-spu=0
+
+# PMT PID (integer)
+#sout-ts-pid-pmt=0
+
+# TS ID (integer)
+#sout-ts-tsid=0
+
+# NET ID (integer)
+#sout-ts-netid=0
+
+# Números de programa PMT (string)
+#sout-ts-program-pmt=
+
+# Definix el PID a l'ID de l'ES (boolean)
+#sout-ts-es-id-pid=0
+
+# Mux PMT (requerix --sout-ts-es-id-pid) (string)
+#sout-ts-muxpmt=
+
+# Descriptors SDT (requerix --sout-ts-es-id-pid) (string)
+#sout-ts-sdtdesc=
+
+# Alineació de dades (boolean)
+#sout-ts-alignment=1
+
+# Retard del shaping (ms) (integer)
+#sout-ts-shaping=200
+
+# Utilitza fotogrames clau (boolean)
+#sout-ts-use-key-frames=0
+
+# Retard de PCR (ms) (integer)
+#sout-ts-pcr=70
+
+# Nombre mínim de fotogrames B (desestimat) (integer)
+#sout-ts-bmin=0
+
+# Nombre mínim de fotogrames B (desestimat) (integer)
+#sout-ts-bmax=0
+
+# Retard DTS (ms) (integer)
+#sout-ts-dts-delay=400
+
+# Xifra l'àudio (boolean)
+#sout-ts-crypt-audio=1
+
+# Xifra el vídeo (boolean)
+#sout-ts-crypt-video=1
+
+# Clau CSA (string)
+#sout-ts-csa-ck=
+
+# Clau CSA segona (string)
+#sout-ts-csa2-ck=
+
+# La clau CSA està en ús (string)
+#sout-ts-csa-use=1
+
+# Mida en bytes del paquet a xifrar. (integer)
+#sout-ts-csa-pkt=188
+
+[mux_ps] # Multiplexor PS
+
+# Retard DTS (ms) (integer)
+#sout-ps-dts-delay=200
+
+# Mida màxima de PES (integer)
+#sout-ps-pes-max-size=65500
+
+[mux_mpjpeg] # Multiplexor del Multipart JPEG
+
+[mux_asf] # Multiplexor ASF
+
+# Títol (string)
+#sout-asf-title=
+
+# Autor (string)
+#sout-asf-author=
+
+# Copyright (string)
+#sout-asf-copyright=
+
+# Comentari (string)
+#sout-asf-comment=
+
+# Valoració (string)
+#sout-asf-rating=
+
+# Grandària del paquet (integer)
+#sout-asf-packet-size=4096
+
+# Substituïx la taxa de bits (integer)
+#sout-asf-bitrate-override=0
+
+[mux_mp4] # Multiplexor MP4/MOV
+
+# Crear fitxers d'«Inici ràpid» (boolean)
+#sout-mp4-faststart=1
+
+[svcdsub] # Descodifcacor Philips OGT (subtítols SVCD)
+
+# Habilita la depuració (integer)
+#svcdsub-debug=0
+
+[telx] # Descodificador dels subtítols de teletext
+
+# Substituïx la pàgina (integer)
+#telx-override-page=-1
+
+# Ignora el senyalador de subtítols (boolean)
+#telx-ignore-subtitle-flag=0
+
+# Solució temporal per a França (boolean)
+#telx-french-workaround=0
+
+[speex] # Descodificador d'àudio Speex
+
+# Mode (integer)
+#sout-speex-mode=0
+
+# Complexitat de la codificació (integer)
+#sout-speex-complexity=3
+
+# Codificació CBR (boolean)
+#sout-speex-cbr=0
+
+# Qualitat de la codificació (float)
+#sout-speex-quality=8.000000
+
+# Taxa de bits màxima (integer)
+#sout-speex-max-bitrate=0
+
+# Detecció d'activitat de veu (boolean)
+#sout-speex-vad=1
+
+# Transmissió discontínua (boolean)
+#sout-speex-dtx=0
+
+[subsdec] # Descodificador de subtítols de text
+
+# Justificació de subtítols (integer)
+#subsdec-align=0
+
+# Codificació del text dels subtítols (string)
+#subsdec-encoding=
+
+# Autodetecció dels subtítols UTF-8 (boolean)
+#subsdec-autodetect-utf8=1
+
+# Subtítols formatats (boolean)
+#subsdec-formatted=1
+
+[theora] # Descodificador de vídeo Theora
+
+# Qualitat de la codificació (integer)
+#sout-theora-quality=2
+
+[x264] # Codificador H.264/MPEG4 AVC (x264)
+
+# Màxima mida GOP (integer)
+#sout-x264-keyint=250
+
+# Mínim mida GOP (integer)
+#sout-x264-min-keyint=25
+
+# Agressivitat de fotogrames I addicionals (integer)
+#sout-x264-scenecut=40
+
+# Nombre de fotogrames B entre fotogrames I i P (integer)
+#sout-x264-bframes=3
+
+# Decisió dels fotogrames B adaptatius (integer)
+#sout-x264-b-adapt=1
+
+# Influïx (predisposa) a l'ús de fotogrames B  (integer)
+#sout-x264-b-bias=0
+
+# Conserva alguns fotogrames B com a referències (string)
+#sout-x264-bpyramid=none
+
+# CABAC (boolean)
+#sout-x264-cabac=1
+
+# Nombre de fotogrames de referència (integer)
+#sout-x264-ref=3
+
+# Omet el flitre de bucle (boolean)
+#sout-x264-nf=0
+
+# Filtre de bucle AlphaC0 i paràmetres Beta alpha:beta (string)
+#sout-x264-deblock=0:0
+
+# Nivell H.264 (string)
+#sout-x264-level=5.1
+
+# Perfil H.264 (string)
+#sout-x264-profile=high
+
+# Mode entrellaçat (boolean)
+#sout-x264-interlaced=0
+
+# Definix QP (integer)
+#sout-x264-qp=-1
+
+# Qualitat del VBR (integer)
+#sout-x264-crf=23
+
+# QP mínim (integer)
+#sout-x264-qpmin=10
+
+# QP màxim (integer)
+#sout-x264-qpmax=51
+
+# Etapa màxima de QP (integer)
+#sout-x264-qpstep=4
+
+# Tolerància mitjana de la taxa de bits (float)
+#sout-x264-ratetol=1.000000
+
+# Màxima taxa de bits local (integer)
+#sout-x264-vbv-maxrate=0
+
+# Memòria intermèdia VBV (integer)
+#sout-x264-vbv-bufsize=0
+
+# Ocupació de la memòria intermèdia VBV inicial (float)
+#sout-x264-vbv-init=0.900000
+
+# Factor QP entre fotogrames I i P (float)
+#sout-x264-ipratio=1.400000
+
+# Nombre de fotogrames entre fotogrames P i B (float)
+#sout-x264-pbratio=1.300000
+
+# Diferència QP entre la intensitat cromàtica i la brillantor (integer)
+#sout-x264-chroma-qp-offset=0
+
+# Control de taxa de passades múltiples (integer)
+#sout-x264-pass=0
+
+# Compressió de corba QP (float)
+#sout-x264-qcomp=0.600000
+
+# Reduïx fluctuacions en QP (float)
+#sout-x264-cplxblur=20.000000
+
+# Reduïx fluctuacions en QP (float)
+#sout-x264-qblur=0.500000
+
+# De quina manera AQ distribuïx els bits (integer)
+#sout-x264-aq-mode=1
+
+# Força d'AQ (float)
+#sout-x264-aq-strength=1.000000
+
+# Particions a considerar (string)
+#sout-x264-partitions=normal
+
+# Mode de predicció de Direct MV (string)
+#sout-x264-direct=spatial
+
+# Mida de predicció de Direct (integer)
+#sout-x264-direct-8x8=1
+
+# Amplàries previstes per a fotogrames B (boolean)
+#sout-x264-weightb=1
+
+# Ponderació prevista per a fotogrames-P (integer)
+#sout-x264-weightp=2
+
+# Mètode de valoració de moviment de píxel enter (string)
+#sout-x264-me=hex
+
+# Abast màxim de busca del vector de moviment (integer)
+#sout-x264-merange=16
+
+# Longitud màxima del vector de moviment (integer)
+#sout-x264-mvrange=-1
+
+# Espai mínim de la memòria intermèdia entre fils (integer)
+#sout-x264-mvrange-thread=-1
+
+# Valoració de moviment de subpíxel i qualitat de la decisió de partició (integer)
+#sout-x264-subme=5
+
+# Decidix les preferències en una base per partició (boolean)
+#sout-x264-mixed-refs=1
+
+# Intensitat cromàtica en la valoració de moviment (boolean)
+#sout-x264-chroma-me=1
+
+# Mida de la transformació espacial adaptativa (boolean)
+#sout-x264-8x8dct=0
+
+# Quantificació Trellis RD (integer)
+#sout-x264-trellis=1
+
+# Detecció primera d'OMISSIÓ en fotogrames P (boolean)
+#sout-x264-fast-pskip=1
+
+# Recompte de fotogrames a utilitzar en el tipus de fotograma de previsió (integer)
+#sout-x264-lookahead=5
+
+# Coeficient de llindar en fotogrames P (boolean)
+#sout-x264-dct-decimate=1
+
+# Reducció del soroll (integer)
+#sout-x264-nr=0
+
+# Zona morta de quantificació entre brillantors  (integer)
+#sout-x264-deadzone-inter=21
+
+# Zona morta de quantificació dins de la brillantor (integer)
+#sout-x264-deadzone-intra=11
+
+# Optimitzacions no deterministes quan estan en paral·lel (boolean)
+#sout-x264-non-deterministic=0
+
+# Optimitzacions de CPU (boolean)
+#sout-x264-asm=1
+
+# Càlcul de PSNR (boolean)
+#sout-x264-psnr=0
+
+# Càlcul de SSIM (boolean)
+#sout-x264-ssim=0
+
+# Mode silenciós (boolean)
+#sout-x264-quiet=0
+
+# Números d'identificació de PPS i SPS (integer)
+#sout-x264-sps-id=0
+
+# Delimitadors d'unitats d'accés (boolean)
+#sout-x264-aud=0
+
+# Estadístiques (boolean)
+#sout-x264-verbose=0
+
+# Nom de fitxer per a fitxer d'estadístiques de 2 passades (string)
+#sout-x264-stats=x264_2pass.log
+
+[avcodec] # Descodificador d'àudio/vídeo FFmpeg
+
+# Renderització directa (boolean)
+#ffmpeg-dr=1
+
+# Hi ha un error de tolerància (integer)
+#ffmpeg-error-resilience=1
+
+# Solució temporal d'errors (integer)
+#ffmpeg-workaround-bugs=1
+
+# De pressa (boolean)
+#ffmpeg-hurry-up=1
+
+# Omet els fotogrames (per defecte=0) (integer)
+#ffmpeg-skip-frame=0
+
+# Omet idtc (per defecte=0) (integer)
+#ffmpeg-skip-idct=0
+
+# Visualitza els vectors de moviment (integer)
+#ffmpeg-vismv=0
+
+# Descodificació de resolució baixa (integer)
+#ffmpeg-lowres=0
+
+# Permet trucs de velocitat (boolean)
+#ffmpeg-fast=0
+
+# Omet el filtre de bucle per a la descodificació H.264 (integer)
+#ffmpeg-skiploopfilter=0
+
+# Màscara de depuració d'errors (integer)
+#ffmpeg-debug=0
+
+# Nivell de qualitat (string)
+#sout-ffmpeg-hq=simple
+
+# Proporció de fotogrames clau (integer)
+#sout-ffmpeg-keyint=0
+
+# Proporció de fotogrames B (integer)
+#sout-ffmpeg-bframes=0
+
+# De pressa (boolean)
+#sout-ffmpeg-hurry-up=0
+
+# Codificació entrellaçada (boolean)
+#sout-ffmpeg-interlace=0
+
+# Habilita la valoració de moviment entrellaçat (boolean)
+#sout-ffmpeg-interlace-me=1
+
+# Tolerància de la taxa de bits del vídeo  (integer)
+#sout-ffmpeg-vt=0
+
+# Habilita la valoració de moviment previ (boolean)
+#sout-ffmpeg-pre-me=0
+
+# Mida de la memòria intermèdia de control de taxa (integer)
+#sout-ffmpeg-rc-buffer-size=1835008
+
+# Agressivitat de la memòria intermèdia de control de taxa (float)
+#sout-ffmpeg-rc-buffer-aggressivity=1.000000
+
+# Factor de quantificació I  (float)
+#sout-ffmpeg-i-quant-factor=0.000000
+
+# Reducció del soroll (integer)
+#sout-ffmpeg-noise-reduction=0
+
+# Habilita la matriu de quantificació MPEG4 (boolean)
+#sout-ffmpeg-mpeg4-matrix=0
+
+# Escala mínima de quantificació de vídeo  (integer)
+#sout-ffmpeg-qmin=0
+
+# Escala màxima de quantificació de vídeo  (integer)
+#sout-ffmpeg-qmax=0
+
+# Habilita la quantificació Trellis (boolean)
+#sout-ffmpeg-trellis=0
+
+# Escala fixa de quantificació (float)
+#sout-ffmpeg-qscale=0.000000
+
+# Conformitat estàndard estricta  (integer)
+#sout-ffmpeg-strict=0
+
+# Màscara de lluminositat (float)
+#sout-ffmpeg-lumi-masking=0.000000
+
+# Màscara de foscor (float)
+#sout-ffmpeg-dark-masking=0.000000
+
+# Màscara de moviment (float)
+#sout-ffmpeg-p-masking=0.000000
+
+# Màscara de vora (float)
+#sout-ffmpeg-border-masking=0.000000
+
+# Eliminació de la luminància (integer)
+#sout-ffmpeg-luma-elim-threshold=0
+
+# Eliminació de la crominància (integer)
+#sout-ffmpeg-chroma-elim-threshold=0
+
+# Especifiqueu el perfil d'àudio AAC que s'ha d'utilitzar. (string)
+#sout-ffmpeg-aac-profile=low
+
+[fake] # Descodificador de vídeo fals
+
+# Fitxer d'imatge (string)
+#fake-file=
+
+# Actualitza el fitxer d'imatge (integer)
+#fake-file-reload=0
+
+# Amplària del vídeo (integer)
+#fake-width=0
+
+# Alçària del vídeo (integer)
+#fake-height=0
+
+# Conserva la relació d'aspecte (boolean)
+#fake-keep-ar=0
+
+# Relació d'aspecte del fons (string)
+#fake-aspect-ratio=
+
+# Desentrellaça el vídeo (boolean)
+#fake-deinterlace=0
+
+# Mòdul de desentrellaçat (string)
+#fake-deinterlace-module=deinterlace
+
+# S'ha utilitzat intensitat cromàtica. (string)
+#fake-chroma=I420
+
+[invmem] # Descodificador de vídeo de la memòria
+
+# Amplària (integer)
+#invmem-width=0
+
+# Alçària (integer)
+#invmem-height=0
+
+# Funció de bloqueig (string)
+#invmem-lock=0
+
+# Funció de desbloqueig (string)
+#invmem-unlock=0
+
+# Dades de la crida de retorn (string)
+#invmem-data=0
+
+[vorbis] # Descodificador d'àudio Vorbis
+
+# Qualitat de la codificació (integer)
+#sout-vorbis-quality=0
+
+# Màxima taxa de bits de la codificació  (integer)
+#sout-vorbis-max-bitrate=0
+
+# Mínima taxa de bits de la codificació (integer)
+#sout-vorbis-min-bitrate=0
+
+# Codificació CBR (boolean)
+#sout-vorbis-cbr=0
+
+[twolame] # Codificador d'àudio Libtwolame
+
+# Qualitat de la codificació (float)
+#sout-twolame-quality=0.000000
+
+# Mode Estèreo (integer)
+#sout-twolame-mode=0
+
+# Mode VBR (boolean)
+#sout-twolame-vbr=0
+
+# model psicoacústic (integer)
+#sout-twolame-psy=3
+
+[dvbsub] # Descodificador de subtítols DVB
+
+# Posició de les subimatges (integer)
+#dvbsub-position=8
+
+# S'està descodificant la coordenada X (integer)
+#dvbsub-x=-1
+
+# S'està descodificant la coordenada Y (integer)
+#dvbsub-y=-1
+
+# S'està codificant la coordenada X (integer)
+#sout-dvbsub-x=-1
+
+# S'està codificant la coordenada Y (integer)
+#sout-dvbsub-y=-1
+
+[skins2] # Interfície d'aparença
+
+# Aparença que utilitzar (string)
+#skins2-last=
+
+# Configuració de l'última aparença utilitzada (string)
+#skins2-config=
+
+# Utilitza una llista de reproducció amb aparença (boolean)
+#skinned-playlist=1
+
+# Mostra el vídeo en una finestra amb aparença si hi ha (boolean)
+#skinned-video=1
+
+[qt4] # Interfície Qt
+
+# Selecció del mode d'inici i l'aspecte (integer)
+#qt-display-mode=0
+
+# Mostra una notificació emergent en el canvi de pista. (boolean)
+#qt-notification=1
+
+# El factor d'opacitat de les finestres és entre 0,1 i 1. (float)
+#qt-opacity=1.000000
+
+# Opacitat del controlador de mode pantalla completa entre 0,1 i 1. (float)
+#qt-fs-opacity=0.800000
+
+# Icona de la safata del sistema (boolean)
+#qt-system-tray=1
+
+# Inicia el VLC només amb una icona de la safata del sistema (boolean)
+#qt-start-minimized=0
+
+# Canvia la interfície a la seua mida original (boolean)
+#qt-video-autoresize=1
+
+# Mostra el nom de l'element que s'està reproduint en el títol de la finestra (boolean)
+#qt-name-in-title=1
+
+# Mostra un controlador en mode de pantalla completa. (boolean)
+#qt-fs-controller=1
+
+# Permet que el volum s'establisca al 400% (boolean)
+#qt-volume-complete=0
+
+# Guarda automàticament el volum en eixir (boolean)
+#qt-autosave-volume=0
+
+# Incrusta el navegador de fitxers en un diàleg obert (boolean)
+#qt-embedded-open=0
+
+# Guarda els últims elements reproduïts en el menú (boolean)
+#qt-recentplay=1
+
+# Llista de paraules separades per | a filtrar (string)
+#qt-recentplay-filter=
+
+# Opcions avançades (boolean)
+#qt-adv-options=0
+
+# Mostra les preferències avançades per damunt de les simples (boolean)
+#qt-advanced-pref=0
+
+# Mostra errors poc importants i diàlegs d'avisos  (boolean)
+#qt-error-dialogs=1
+
+# Definix els colors del cursor del volum (string)
+#qt-slider-colours=255;255;255;20;210;20;255;199;15;245;39;29
+
+# Demana la política de xarxa a l'inici (boolean)
+qt-privacy-ask=0
+
+[ncurses] # Interfície ncurses
+
+# Punt d'inici del navegador de fitxers (string)
+#browse-dir=
+
+[dtstofloat32] # Descodificador d'àudio d'acústiques coherents DTS
+
+# Compressió d'abast dinàmic DTS (boolean)
+#dts-dynrng=1
+
+[param_eq] # Equalitzador paramètric
+
+# Baixa freq (Hz) (float)
+#param-eq-lowf=100.000000
+
+# Guany de la baixa freqüència (dB) (float)
+#param-eq-lowgain=0.000000
+
+# Alta freqüència (Hz) (float)
+#param-eq-highf=10000.000000
+
+# Guany de l'alta freqüència (dB) (float)
+#param-eq-highgain=0.000000
+
+# Freq 1 (Hz) (float)
+#param-eq-f1=300.000000
+
+# guany de freq 1 (dB) (float)
+#param-eq-gain1=0.000000
+
+# Freq 1 Q (float)
+#param-eq-q1=3.000000
+
+# Freq 2 (Hz) (float)
+#param-eq-f2=1000.000000
+
+# guany de freq 2 (dB) (float)
+#param-eq-gain2=0.000000
+
+# Freq 2 Q (float)
+#param-eq-q2=3.000000
+
+# Freq 3 (Hz) (float)
+#param-eq-f3=3000.000000
+
+# guant de freq 3 (dB) (float)
+#param-eq-gain3=0.000000
+
+# Freq 3 Q (float)
+#param-eq-q3=3.000000
+
+[normvol] # Normalitzador de volum
+
+# Nombre de memòries intermèdies d'àudio (integer)
+#norm-buff-size=20
+
+# Nivell màxim (float)
+#norm-max-level=2.000000
+
+[mono] # Filtre d'àudio per la conversió d'estèreo a mono
+
+# Utilitza l'algoritme de reducció de mescles (boolean)
+#sout-mono-downmix=1
+
+# Seleccioneu el canal que s'ha de conservar (integer)
+#sout-mono-channel=-1
+
+[spatializer] # Spatializer
+
+# Grandària de l'habitació (float)
+#spatializer-roomsize=1.050000
+
+# Amplària de l'habitació (float)
+#spatializer-width=10.000000
+
+# Banyat (float)
+#spatializer-wet=3.000000
+
+# Sec (float)
+#spatializer-dry=2.000000
+
+# Humit (float)
+#spatializer-damp=1.000000
+
+[headphone_channel_mixer] # Canal mesclador d'auriculars amb un efecte d'espai virtual.
+
+# Dimensió característica (integer)
+#headphone-dim=10
+
+# Compensa el retard (boolean)
+#headphone-compensate=0
+
+# No hi ha descodificació de Dolby Surround (boolean)
+#headphone-dolby=0
+
+[equalizer] # Equalitzador de 10 bandes
+
+# Preconfiguració de l'equalitzador (string)
+#equalizer-preset=flat
+
+# Guany de les bandes (string)
+#equalizer-bands=
+
+# Dos passades (boolean)
+#equalizer-2pass=0
+
+# Guany global (float)
+#equalizer-preamp=12.000000
+
+[a52tofloat32] # Còdec d'àudio ATSC A/52 (AC-3)
+
+# Compressió d'abast dinàmic A/52 (boolean)
+#a52-dynrng=1
+
+# Habilita la codificació entrellaçada interna (boolean)
+#a52-upmix=0
+
+[scaletempo] # Canvia el ritme de l'àudio en sincronització amb la velocitat de reproducció
+
+# Longitud del pas (integer)
+#scaletempo-stride=30
+
+# Longitud de la superposició (float)
+#scaletempo-overlap=0.200000
+
+# Longitud de la busca (integer)
+#scaletempo-search=14
+
+[access_output_udp] # Eixida de flux d'UDP
+
+# Valor de la memòria cau (ms) (integer)
+#sout-udp-caching=300
+
+# Paquets del grup (integer)
+#sout-udp-group=1
+
+[access_output_shout] # Eixida IceCAST
+
+# Nom del flux (string)
+#sout-shout-name=VLC media player - Live stream
+
+# Descripció del flux (string)
+#sout-shout-description=Live stream from VLC media player
+
+# Flux MP3 (boolean)
+#sout-shout-mp3=0
+
+# Descripció del gènere (string)
+#sout-shout-genre=Alternative
+
+# Descripció de l'URL (string)
+#sout-shout-url=http://www.videolan.org/vlc
+
+# Taxa de bits (string)
+#sout-shout-bitrate=
+
+# Velocitat de mostra (string)
+#sout-shout-samplerate=
+
+# Nombre de canals (string)
+#sout-shout-channels=
+
+# Qualitat de l'Ogg Vorbis (string)
+#sout-shout-quality=
+
+# Públic del flux (boolean)
+#sout-shout-public=0
+
+[access_output_http] # Flux d'eixida d'HTTP
+
+# Nom d'usuari (string)
+#sout-http-user=
+
+# Contrasenya (string)
+#sout-http-pwd=
+
+# MIME (string)
+#sout-http-mime=
+
+# Fitxer del certificat (string)
+#sout-http-cert=vlc.pem
+
+# Fitxer de la clau privada (string)
+#sout-http-key=
+
+# Fitxer del root-CA (string)
+#sout-http-ca=
+
+# Fitxer de CRL (string)
+#sout-http-crl=
+
+[access_output_file] # Flux d'eixida del fitxer
+
+# Afig al fitxer (boolean)
+#sout-file-append=0
+
+[showintf] # Mostra la interfície amb el ratolí
+
+# Llindar (integer)
+#showintf-threshold=10
+
+[rc] # Interfície del control remot
+
+# Mostra la posició del flux (boolean)
+#rc-show-pos=0
+
+# TTY fals (boolean)
+#rc-fake-tty=0
+
+# Entrada d'ordes del sòcol UNIX (string)
+#rc-unix=
+
+# Entrada de les ordes TCP (string)
+#rc-host=
+
+[http] # Interfície de control remot HTTP
+
+# Adreça de l'ordinador (string)
+#http-host=
+
+# Directori font (string)
+#http-src=
+
+# Gestors (string)
+#http-handlers=
+
+# Exporta la caràtula com a /art (boolean)
+#http-album-art=0
+
+# Fitxer del certificat (string)
+#http-intf-cert=
+
+# Fitxer de la clau privada (string)
+#http-intf-key=
+
+# Fitxer del root-CA (string)
+#http-intf-ca=
+
+# Fitxer de CRL (string)
+#http-intf-crl=
+
+[hotkeys] # Interfície de gestió de les dreceres de teclat
+
+# Control de l'eix-x del MouseWheel (integer)
+#hotkeys-mousewheel-mode=0
+
+[gestures] # Interfície de control dels moviment del ratolí
+
+# Llindar de moviment (10-100) (integer)
+#gestures-threshold=30
+
+# Botó d'activació (string)
+#gestures-button=right
+
+[motion] # Interfície del control del moviment
+
+# Utilitzeu el filtre de vídeo de rotació en comptes de transformar (boolean)
+#motion-use-rotate=0
+
+[lirc] # Interfície de control remot per a infrarojos
+
+# Canvia el fitxer de configuració de lirc. (string)
+#lirc-file=
+
+[telnet] # Interfície del control remot VLM
+
+# Ordinador (string)
+#telnet-host=
+
+# Port (integer)
+#telnet-port=4212
+
+# Contrasenya (string)
+#telnet-password=admin
+
+[packetizer_mpegvideo] # Empaquetador de vídeo MPEG-I/II
+
+# Sincronitza dins del fotograma (boolean)
+#packetizer-mpegvideo-sync-iframe=0
+
+[avformat] # Desmultiplexor FFmpeg
+
+# Multiplexor Ffmpeg (string)
+#ffmpeg-mux=
+
+[avi] # Desmultiplexor AVI
+
+# Imposa el mètode d'intercalat (boolean)
+#avi-interleaved=0
+
+# Imposa la creació d'un índex (integer)
+#avi-index=0
+
+[mjpeg] # Demultiplexor de càmera M-JPEG
+
+# Fotogrames per segon (float)
+#mjpeg-fps=0.000000
+
+[live555] # Desmultiplexor RTP/RTSP/SDP (que utilitza Live555)
+
+# Utilitza l'RTP sobre l'RTSP (TCP) (boolean)
+#rtsp-tcp=0
+
+# Port del client (integer)
+#rtp-client-port=-1
+
+# Imposa la multidifusió d'RTP a través d'RTSP (boolean)
+#rtsp-mcast=0
+
+# Túnels RTSP i RTP sobre HTTP (boolean)
+#rtsp-http=0
+
+# Port túnel de l'HTTP (integer)
+#rtsp-http-port=80
+
+# Valor de la memòria cau (ms) (integer)
+#rtsp-caching=1200
+
+# Dialecte RTSP Kasenna (boolean)
+#rtsp-kasenna=0
+
+# Nom d'usuari de RTSP (string)
+#rtsp-user=
+
+# Contrasenya de RTSP (string)
+#rtsp-pwd=
+
+[rawvid] # Demultiplexor de vídeo raw
+
+# Fotogrames per segon (string)
+#rawvid-fps=
+
+# Amplària (integer)
+#rawvid-width=0
+
+# Alçària (integer)
+#rawvid-height=0
+
+# Imposa la intensitat cromàtica (utilitzeu-ho amb molta atenció) (string)
+#rawvid-chroma=
+
+# Relació d'aspecte (string)
+#rawvid-aspect-ratio=
+
+[mod] # Demultiplexor MOD (libmodplug)
+
+# Reducció del soroll (boolean)
+#mod-noisereduction=1
+
+# Reverberació (boolean)
+#mod-reverb=0
+
+# Nivell de reverberació (integer)
+#mod-reverb-level=0
+
+# Retard de reverberació (integer)
+#mod-reverb-delay=40
+
+# Megabass (boolean)
+#mod-megabass=0
+
+# Nivell de megabass (integer)
+#mod-megabass-level=0
+
+# Tall de mega bass (integer)
+#mod-megabass-range=10
+
+# So envoltant (boolean)
+#mod-surround=0
+
+# Nivell del so envoltant (integer)
+#mod-surround-level=0
+
+# Retard del so envoltant (ms) (integer)
+#mod-surround-delay=5
+
+[ts] # Demultiplexor de flux de transport MPEG
+
+# PMT addicional (string)
+#ts-extra-pmt=
+
+# Definix l'id de l'ES a PID (boolean)
+#ts-es-id-pid=1
+
+# Transmissió ràpida udp (string)
+#ts-out=
+
+# MTU per al mode d'eixida (integer)
+#ts-out-mtu=1400
+
+# CSA ck (string)
+#ts-csa-ck=
+
+# CSA ck (string)
+#ts-csa2-ck=
+
+# Mida en bytes del paquet a desxifrar (integer)
+#ts-csa-pkt=188
+
+# Mode silenciós (boolean)
+#ts-silent=0
+
+# Nom del fitxer de l'abocament (string)
+#ts-dump-file=
+
+# Afig (boolean)
+#ts-dump-append=0
+
+# Mida de la memòria intermèdia d'abocament (integer)
+#ts-dump-size=16384
+
+[ps] # Demultiplexor MPEG-PS
+
+# Confia en les marques horàries d'MPEG (boolean)
+#ps-trust-timestamps=1
+
+[h264] # Demultiplexor de vídeo H264
+
+# Fotogrames per segon (float)
+#h264-fps=25.000000
+
+[rawaud] # Raw audio demuxer
+
+# Canals d'àudio (integer)
+#rawaud-channels=2
+
+# Audio samplerate (Hz) (integer)
+#rawaud-samplerate=48000
+
+# FOURCC code of raw input format (string)
+#rawaud-fourcc=s16l
+
+# Forces the audio language. (string)
+#rawaud-lang=eng
+
+[subtitle] # Analitzador de subtítols de text
+
+# Fotogrames per segon (float)
+#sub-fps=0.000000
+
+# Retard dels subtítols (integer)
+#sub-delay=0
+
+# Retard dels subtítols (string)
+#sub-type=auto
+
+[mkv] # Demultiplexor de flux Matroska
+
+# Capítols ordenats (boolean)
+#mkv-use-ordered-chapters=1
+
+# Còdecs del capítol (boolean)
+#mkv-use-chapter-codec=1
+
+# Directori de precàrrega (boolean)
+#mkv-preload-local-dir=0
+
+# Busca basada en el percentatge, no en el temps (boolean)
+#mkv-seek-percent=0
+
+# Elements Dummy (boolean)
+#mkv-use-dummy=0
+
+[playlist] # Llista de reproducció
+
+# Inici automàtic (boolean)
+#playlist-autostart=1
+
+# ? (integer)
+#parent-item=0
+
+# Omet els anuncis (boolean)
+#playlist-skip-ads=1
+
+# Mostra els continguts d'adult de Shoutcast (boolean)
+#shoutcast-show-adult=0
+
+[vc1] # Demultiplexor de vídeo VC1
+
+# Fotogrames per segon (float)
+#vc1-fps=25.000000
+
+[rawdv] # Demultiplexor de DV (Vídeo Digital)
+
+# De pressa (boolean)
+#rawdv-hurry-up=0
+
+[demuxdump] # Abocador de fitxer
+
+# Nom del fitxer que s'ha d'abocar (string)
+#demuxdump-file=stream-demux.dump
+
+# Afig a un fitxer existent (boolean)
+#demuxdump-append=0
+
+[m4v] # Demultiplexor de vídeo MPEG-4
+
+# Fotogrames per segon (float)
+#m4v-fps=25.000000
+
+[dirac] # Dirac video demuxer
+
+# Value to adjust dts by (integer)
+#dirac-dts-offset=0
+
+[audioscrobbler] # Tramesa de cançons reproduïdes a last.fm
+
+# Nom d'usuari (string)
+#lastfm-username=
+
+# Contrasenya (string)
+#lastfm-password=
+
+# URL scrobbler (string)
+#scrobbler-url=post.audioscrobbler.com
+
+[gnutls] # Seguretat de capes de transport de GnuTLS
+
+# Temps d'expiració per a sessions TLS represes (integer)
+#gnutls-cache-timeout=3600
+
+# Nombre de sessions TLS represes (integer)
+#gnutls-cache-size=64
+
+[vod_rtsp] # Servidor RTSP VoD
+
+# Adreça de l’ordinador RTSP (string)
+#rtsp-host=
+
+# Multiplexor per al transport d'RTSP RAW (string)
+#rtsp-raw-mux=ts
+
+# Nombre màxim de connexions (integer)
+#rtsp-throttle-users=0
+
+# Establix l'opció de temps d'espera en la cadena de la sessió RTSP (integer)
+#rtsp-session-timeout=5
+
+[lua] # Arreplega el material gràfic utilitzant scripts lua
+
+# Interfície Lua (string)
+#lua-intf=dummy
+
+# Configuració de la interfície Lua (string)
+#lua-config=
+
+[freetype] # Renderitzador del tipus de lletra freetype2
+
+# Tipus de lletra (string)
+#freetype-font=/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-Bold.ttf
+
+# Mida de la lletra en píxels (integer)
+#freetype-fontsize=0
+
+# Opacitat (integer)
+#freetype-opacity=255
+
+# Color de text predeterminat (integer)
+#freetype-color=16777215
+
+# Grandària relativa de la lletra (integer)
+#freetype-rel-fontsize=16
+
+# Efecte de la lletra (integer)
+#freetype-effect=2
+
+# Utilitza el representador YUVP (boolean)
+#freetype-yuvp=0
+
+[telepathy] # Telepatia «En reproducció» (MissionControl)
+
+# Cadena del format de títol (string)
+#telepathy-format=$a - $t
+
+[logger] # S'està registrant el fitxer
+
+# Nom del fitxer de registre (string)
+#logfile=
+
+# Format del registre (string)
+#logmode=text
+
+[dummy] # Funció de la interfície Dummy
+
+# Guarda les dades del còdec raw (boolean)
+#dummy-save-es=0
+
+# Format de la intensitat cromàtica de la imatge Dummy (string)
+#dummy-chroma=
+
+[notify] # Connector de notificació de LibNotify
+
+# Temps d'espera (ms) (integer)
+#notify-timeout=4000
+
+[visual] # Filtre del visualitzador
+
+# Llista d'efectes (string)
+#effect-list=spectrum
+
+# Amplària del vídeo (integer)
+#effect-width=533
+
+# Alçària del vídeo (integer)
+#effect-height=400
+
+# Més bandes: 80 / 20 (boolean)
+#visual-80-bands=1
+
+# Habilita els pics (boolean)
+#visual-peaks=1
+
+# Habilita l'espectre gràfic original (boolean)
+#spect-show-original=0
+
+# Habilita la base (boolean)
+#spect-show-base=1
+
+# Radi de píxel base (integer)
+#spect-radius=42
+
+# Seccions espectrals (integer)
+#spect-sections=3
+
+# Color V-plane (integer)
+#spect-color=80
+
+# Habilita les bandes (boolean)
+#spect-show-bands=1
+
+# Més bandes: 80 / 20 (boolean)
+#spect-80-bands=1
+
+# Separador de bandes (integer)
+#spect-separ=1
+
+# Amplificació (integer)
+#spect-amp=8
+
+# Habilita els pics (boolean)
+#spect-show-peaks=1
+
+# Amplària addicional de pic (integer)
+#spect-peak-width=61
+
+# Alçària de pic (integer)
+#spect-peak-height=1
+
+[oss] # Eixida d'àudio d'UNIX OSS
+
+# Dispositiu OSS DSP (string)
+#oss-audio-device=/dev/dsp
+
+# Intenta funcionar amb controladors OSS amb molts errors (boolean)
+#oss-buggy=0
+
+[alsa] # Eixida d'àudio ALSA
+
+# Nom del dispositiu ALSA (string)
+#alsa-audio-device=default
+
+[aout_file] # Eixida d'àudio del fitxer
+
+# Format d'eixida (string)
+#audiofile-format=s16
+
+# Nombre de canals d'eixida (integer)
+#audiofile-channels=0
+
+# Fitxer d'eixida (string)
+#audiofile-file=audiofile.wav
+
+# Afig una capçalera WAVE (boolean)
+#audiofile-wav=1
+
+[x11] # Eixida de vídeo X11
+
+# Nom de la pantalla d'X11 (string)
+#x11-display=
+
+# Mètode de pantalla completa altern. (boolean)
+#x11-altfullscreen=0
+
+# Utilitza la memòria compartida (boolean)
+#x11-shm=1
+
+# Pantalla per al mode de pantalla completa. (integer)
+#x11-xineramascreen=-1
+
+[fb] # Eixida de vídeo de la memòria d'imatge de GNU/Linux
+
+# Dispositiu de la memòria intermèdia de fotogrames (string)
+#fbdev=/dev/fb0
+
+# Executa la memòria d'imatge en el TTY actual. (boolean)
+#fb-tty=1
+
+# S'ha utilitzat intensitat cromàtica. (string)
+#fb-chroma=
+
+# Relació d'aspecte del vídeo (string)
+#fb-aspect-ratio=
+
+# Resolució de la memòria intermèdia de fotogrames a utilitzar. (integer)
+#fb-mode=4
+
+# La memòria interèdia de fotogrames utilitza acceleració hw. (boolean)
+#fb-hw-accel=1
+
+[opengl] # Eixida de vídeo OpenGL
+
+# Proveïdor d'OpenGL (string)
+#opengl-provider=
+
+[glx] # Proveïdor d'OpenGL(GLX)
+
+# Nom de la pantalla d'X11 (string)
+#glx-display=
+
+# Mètode de pantalla completa altern. (boolean)
+#glx-altfullscreen=0
+
+# Pantalla per al mode de pantalla completa. (integer)
+#glx-xineramascreen=-1
+
+[drawable] # Vídeo de finestra X incrustat
+
+[vmem] # Eixida de memòria del vídeo
+
+# Amplària (integer)
+#vmem-width=320
+
+# Alçària (integer)
+#vmem-height=200
+
+# Pas (integer)
+#vmem-pitch=640
+
+# Intensitat cromàtica (string)
+#vmem-chroma=RV16
+
+# Funció de bloqueig (string)
+#vmem-lock=0
+
+# Funció de desbloqueig (string)
+#vmem-unlock=0
+
+# Dades de la crida de retorn (string)
+#vmem-data=0
+
+[yuv] # Eixida de vídeo YUV
+
+# Dispositiu, fifo o nom de fitxer (string)
+#yuv-file=stream.yuv
+
+# S'ha utilitzat intensitat cromàtica. (string)
+#yuv-chroma=
+
+# Capçalera YUV4MPEG2 (per defecte està desactivada) (boolean)
+#yuv-yuv4mpeg2=0
+
+[xvideo] # Eixida de vídeo d'extensió d'XVideo 
+
+# Nom de la pantalla d'X11 (string)
+#xvideo-display=
+
+# Nombre de l'adaptador XVideo (integer)
+#xvideo-adaptor=-1
+
+# Mètode de pantalla completa altern. (boolean)
+#xvideo-altfullscreen=0
+
+# Format d'intensitat cromàtica XVimage (string)
+#xvideo-chroma=
+
+# Utilitza la memòria compartida (boolean)
+#xvideo-shm=1
+
+# Pantalla per al mode de pantalla completa. (integer)
+#xvideo-xineramascreen=-1
+
+[stream_out_rtp] # Flux d'eixida de RTP
+
+# Destinació (string)
+#sout-rtp-dst=
+
+# SDP (string)
+#sout-rtp-sdp=
+
+# Multiplexor (string)
+#sout-rtp-mux=
+
+# Anunci de SAP (boolean)
+#sout-rtp-sap=0
+
+# Nom de la sessió (string)
+#sout-rtp-name=
+
+# Descripció de la sessió (string)
+#sout-rtp-description=
+
+# URL de la sessió (string)
+#sout-rtp-url=
+
+# Adreça electrònica de la sessió (string)
+#sout-rtp-email=
+
+# Número de telèfon de la sessió (string)
+#sout-rtp-phone=
+
+# Protocol de transport (string)
+#sout-rtp-proto=udp
+
+# Port (integer)
+#sout-rtp-port=5004
+
+# Port de l'àudio (integer)
+#sout-rtp-port-audio=0
+
+# Port del vídeo (integer)
+#sout-rtp-port-video=0
+
+# Límit Hop (TTL) (integer)
+#sout-rtp-ttl=-1
+
+# Multidifusió RTP/RTCP  (boolean)
+#sout-rtp-rtcp-mux=0
+
+# Clau SRTP (hexadecimal) (string)
+#sout-rtp-key=
+
+# SRTP salt (hexadecimal) (string)
+#sout-rtp-salt=
+
+# MP4A LATM (boolean)
+#sout-rtp-mp4a-latm=0
+
+[stream_out_bridge] # Flux d'eixida del pont
+
+# Identificador (integer)
+#sout-bridge-out-id=0
+
+# Nom de la destinació del pont (string)
+#sout-bridge-out-in-name=default
+
+# Retard (integer)
+#sout-bridge-in-delay=0
+
+# Desplaçament d'ID (integer)
+#sout-bridge-in-id-offset=8192
+
+# Nom de la instància actual (string)
+#sout-bridge-in-name=default
+
+# Recorre a la reproducció de text variable quan es queda sense dades (boolean)
+#sout-bridge-in-placeholder=0
+
+# Retard de text variable (integer)
+#sout-bridge-in-placeholder-delay=200
+
+# Espera el fotograma l abans de commutar el text variable  (boolean)
+#sout-bridge-in-placeholder-switch-on-iframe=1
+
+[stream_out_raop] # Eixida de flux del Protocol d'Eixida d'Àudio Remot
+
+# Ordinador (string)
+#sout-raop-host=
+
+# Volum (integer)
+#sout-raop-volume=100
+
+[stream_out_display] # Mostra el flux d'eixida
+
+# Habilita l'àudio (boolean)
+#sout-display-audio=1
+
+# Habilita el vídeo (boolean)
+#sout-display-video=1
+
+# Retard (integer)
+#sout-display-delay=100
+
+[stream_out_standard] # Flux d'eixida estàndard
+
+# Mètode de l'accés d'eixida (string)
+#sout-standard-access=
+
+# Demultiplexor de l'eixida (string)
+#sout-standard-mux=
+
+# Destinació d'eixida (string)
+#sout-standard-dst=
+
+# Adreça a la qual s'ha de vincular (configuració de l'aplicació d'ajuda per a dst) (string)
+#sout-standard-bind=
+
+# Nom del fitxer per al flux (configuració de l'aplicació d'ajuda per a dst) (string)
+#sout-standard-path=
+
+# Anunci de SAP (boolean)
+#sout-standard-sap=0
+
+# Nom de la sessió (string)
+#sout-standard-name=
+
+# Nom del grup de la sessió (string)
+#sout-standard-group=
+
+# Descripció de la sessió (string)
+#sout-standard-description=
+
+# URL de la sessió (string)
+#sout-standard-url=
+
+# Adreça electrònica de la sessió (string)
+#sout-standard-email=
+
+# Número de telèfon de la sessió (string)
+#sout-standard-phone=
+
+[stream_out_mosaic_bridge] # Flux d'eixida del pont de mosaic
+
+# Identificador (string)
+#sout-mosaic-bridge-id=Id
+
+# Amplària del vídeo (integer)
+#sout-mosaic-bridge-width=0
+
+# Alçària del vídeo (integer)
+#sout-mosaic-bridge-height=0
+
+# Relació d'aspecte de la mostra (string)
+#sout-mosaic-bridge-sar=1:1
+
+# Intensitat cromàtica de la imatge (string)
+#sout-mosaic-bridge-chroma=
+
+# Filtre de vídeo (string)
+#sout-mosaic-bridge-vfilter=
+
+# Transparència (integer)
+#sout-mosaic-bridge-alpha=255
+
+# Desplaçament X (integer)
+#sout-mosaic-bridge-x=-1
+
+# Desplaçament Y (integer)
+#sout-mosaic-bridge-y=-1
+
+[stream_out_transcode] # Eixida de flux transcodificada
+
+# Codificador de vídeo (string)
+#sout-transcode-venc=
+
+# Còdec del vídeo de destí (string)
+#sout-transcode-vcodec=
+
+# Velocitat de bits del vídeo (integer)
+#sout-transcode-vb=800000
+
+# Escalat del vídeo (float)
+#sout-transcode-scale=1.000000
+
+# Velocitat de fotogrames del vídeo (float)
+#sout-transcode-fps=0.000000
+
+# De pressa (boolean)
+#sout-transcode-hurry-up=1
+
+# Desentrellaça el vídeo (boolean)
+#sout-transcode-deinterlace=0
+
+# Mòdul de desentrellaçat (string)
+#sout-transcode-deinterlace-module=deinterlace
+
+# Amplària del vídeo (integer)
+#sout-transcode-width=0
+
+# Alçària del vídeo (integer)
+#sout-transcode-height=0
+
+# Amplària màxima del vídeo (integer)
+#sout-transcode-maxwidth=0
+
+# Alçària màxima del vídeo (integer)
+#sout-transcode-maxheight=0
+
+# Filtre de vídeo (string)
+#sout-transcode-vfilter=
+
+# Codificador d'àudio (string)
+#sout-transcode-aenc=
+
+# Còdec d'àudio de destí (string)
+#sout-transcode-acodec=
+
+# Taxa de bits de l'àudio (integer)
+#sout-transcode-ab=0
+
+# Canals d'àudio (integer)
+#sout-transcode-channels=0
+
+# Velocitat de mostres d'àudio (integer)
+#sout-transcode-samplerate=0
+
+# Sincronitza amb la pista d'àudio (boolean)
+#sout-transcode-audio-sync=0
+
+# Filtre d'àudio (string)
+#sout-transcode-afilter=
+
+# Codificador de subtítols (string)
+#sout-transcode-senc=
+
+# Còdec de subtítols de destí (string)
+#sout-transcode-scodec=
+
+# Còdec de subtítols de destí (boolean)
+#sout-transcode-soverlay=0
+
+# Superposats (string)
+#sout-transcode-sfilter=
+
+# Menú OSD (boolean)
+#sout-transcode-osd=0
+
+# Nombre de fils (integer)
+#sout-transcode-threads=0
+
+# Prioritat alta (boolean)
+#sout-transcode-high-priority=0
+
+[stream_out_es] # Flux d'eixida elemental
+
+# Mètode de l'accés d'eixida (string)
+#sout-es-access=
+
+# Demultiplexor de l'eixida (string)
+#sout-es-mux=
+
+# URL de l'eixida (string)
+#sout-es-dst=
+
+# Mètode d'accés d'eixida de l'àudio (string)
+#sout-es-access-audio=
+
+# Demultiplexor de l'eixida d'àudio (string)
+#sout-es-mux-audio=
+
+# URL per a l'eixida de l'àudio (string)
+#sout-es-dst-audio=
+
+# Mètode d'accés d'eixida de vídeo (string)
+#sout-es-access-video=
+
+# Demultiplexor de l'eixida de vídeo (string)
+#sout-es-mux-video=
+
+# URL per a l'eixida de vídeo (string)
+#sout-es-dst-video=
+
+[stream_out_record] # Grava l'eixida del flux 
+
+# Prefix de destinació (string)
+#sout-record-dst-prefix=
+
+[x11_screen] # Entrada de la pantalla
+
+# Valor en ms de la memòria cau (integer)
+#screen-caching=300
+
+# Velocitat de fotogrames (float)
+#screen-fps=5.000000
+
+# Angle superior esquerre de la pantalla (integer)
+#screen-top=0
+
+# Angle superior esquerre de la pantalla (integer)
+#screen-left=0
+
+# Amplària de la subpantalla (integer)
+#screen-width=0
+
+# Alçària de la subpantalla (integer)
+#screen-height=0
+
+# Seguix el ratolí (boolean)
+#screen-follow-mouse=0
+
+# Imatge de cursor del ratolí (string)
+#screen-mouse-image=
+
+[access_tcp] # Entrada de TCP
+
+# Valor en ms de la memòria cau (integer)
+#tcp-caching=300
+
+[pvr] # Entrada de les targetes codificadores MPEG (amb controladors IVTV)
+
+# Valor en ms de la memòria cau (integer)
+#pvr-caching=300
+
+# Dispositiu (string)
+#pvr-device=/dev/video0
+
+# Dispositiu de ràdio (string)
+#pvr-radio-device=/dev/radio0
+
+# Norma (integer)
+#pvr-norm=0
+
+# Amplària (integer)
+#pvr-width=-1
+
+# Alçària (integer)
+#pvr-height=-1
+
+# Freqüència (integer)
+#pvr-frequency=-1
+
+# Velocitat de fotogrames (integer)
+#pvr-framerate=-1
+
+# Interval de la tecla (integer)
+#pvr-keyint=-1
+
+# Velocitat de fotogrames (integer)
+#pvr-bframes=-1
+
+# Taxa de bits (integer)
+#pvr-bitrate=-1
+
+# Pic de la taxa de bits (integer)
+#pvr-bitrate-peak=-1
+
+# Mode de la taxa de bits (integer)
+#pvr-bitrate-mode=-1
+
+# Màscara de bits de l'àudio (integer)
+#pvr-audio-bitmask=-1
+
+# Volum (integer)
+#pvr-audio-volume=-1
+
+# Canal (integer)
+#pvr-channel=-1
+
+[access_directory] # Entrada estàndard del directori del sistema de fitxers.
+
+# Comportament del subdirectori (string)
+#recursive=expand
+
+# Extensions ignorades (string)
+#ignore-filetypes=m3u,db,nfo,ini,jpg,jpeg,ljpg,gif,png,pgm,pgmyuv,pbm,pam,tga,bmp,pnm,xpm,xcf,pcx,tif,tiff,lbm,sfv,txt,sub,idx,srt,cue,ssa
+
+[access_udp] # Entrada d'UDP
+
+# Valor en ms de la memòria cau (integer)
+#udp-caching=300
+
+[access_alsa] # Entrada de captació d'àudio Alsa
+
+# Estèreo (boolean)
+#alsa-stereo=1
+
+# Velocitat de mostra (integer)
+#alsa-samplerate=48000
+
+# Valor en ms de la memòria cau (integer)
+#alsa-caching=300
+
+[vcd] # Entrada de VCD
+
+# Valor en ms de la memòria cau (integer)
+#vcd-caching=300
+
+[dvdnav] # Entrada DVDnav
+
+# Angle del DVD (integer)
+#dvdnav-angle=1
+
+# Valor en ms de la memòria cau (integer)
+#dvdnav-caching=300
+
+# Inicia directament al menú (boolean)
+#dvdnav-menu=1
+
+[access_smb] # Entrada de SMB
+
+# Valor en ms de la memòria cau (integer)
+#smb-caching=600
+
+# Nom de l'usuari SMB (string)
+#smb-user=
+
+# Contrasenya SMB (string)
+#smb-pwd=
+
+# Domini SMB (string)
+#smb-domain=
+
+[v4l] # Entrada Video4Linux
+
+# Valor en ms de la memòria cau (integer)
+#v4l-caching=300
+
+# Format d'intensitat cromàtica de l'entrada de vídeo (string)
+#v4l-chroma=
+
+# Velocitat de fotogrames (float)
+#v4l-fps=-1.000000
+
+# Canal (integer)
+#v4l-channel=0
+
+# Sintonitzador (integer)
+#v4l-tuner=-1
+
+# Norma (integer)
+#v4l-norm=3
+
+# Freqüència (integer)
+#v4l-frequency=-1
+
+# Canal d'àudio (integer)
+#v4l-audio=-1
+
+# Amplària (integer)
+#v4l-width=0
+
+# Alçària (integer)
+#v4l-height=0
+
+# Brillantor (integer)
+#v4l-brightness=-1
+
+# Color (integer)
+#v4l-colour=-1
+
+# Matís (integer)
+#v4l-hue=-1
+
+# Contrast (integer)
+#v4l-contrast=-1
+
+# MJPEG (boolean)
+#v4l-mjpeg=0
+
+# Conversió al sistema decimal (integer)
+#v4l-decimation=1
+
+# Qualitat (integer)
+#v4l-quality=100
+
+[cdda] # Entrada de CD d'àudio
+
+# Valor en ms de la memòria cau (integer)
+#cdda-caching=300
+
+# ? (integer)
+#cdda-track=0
+
+# ? (integer)
+#cdda-first-sector=-1
+
+# ? (integer)
+#cdda-last-sector=-1
+
+# Servidor CDDB (string)
+#cddb-server=freedb.freedb.org
+
+# Port del servidor CDDB (integer)
+#cddb-port=8880
+
+[access_mms] # Entrada Microsoft Media Server (MMS)
+
+# Valor en ms de la memòria cau (integer)
+#mms-caching=5700
+
+# Temps d'espera (ms) de TCP/UDP (integer)
+#mms-timeout=5000
+
+# Imposa la selecció de tots els corrents de dades (boolean)
+#mms-all=0
+
+# Màxima taxa de bits (integer)
+#mms-maxbitrate=0
+
+# Servidor intermediari HTTP (string)
+#mmsh-proxy=
+
+[vcdx] # Entrada de Vídeo CD (VCD 1.0, 1.1, 2.0, SVCD, HQVCD)
+
+# Si no és zero, proporciona informació de depuració addicional. (integer)
+#vcdx-debug=0
+
+# Nombre de blocs de CD a aconseguir en una lectura simple. (integer)
+#vcdx-blocks-per-read=20
+
+# Voleu utilitzar el control de reproducció? (boolean)
+#vcdx-PBC=0
+
+# Voleu utilitzar la longitud de pista com a unitat màxima en la busca? (boolean)
+#vcdx-track-length=1
+
+# Voleu mostrar la informació del VCD ampliada? (boolean)
+#vcdx-extended-info=0
+
+# Format que s'ha d'utilitzar en el camp «autor» de la llista de reproducció.  (string)
+#vcdx-author-format=%v - %F disc %c of %C
+
+# Format que s'ha d'utilitzar en el camp  «títol» de la llista de reproducció. (string)
+#vcdx-title-format=%I %N %L%S - %M %A %v - disc %c of %C %F
+
+[access_file] # Entrada de fitxer
+
+# Valor en ms de la memòria cau (integer)
+#file-caching=300
+
+[access_fake] # Entrada falsa
+
+# Valor en ms de la memòria cau (integer)
+#fake-caching=300
+
+# Velocitat de fotogrames (float)
+#fake-fps=25.000000
+
+# Identificador (integer)
+#fake-id=0
+
+# Duració en ms (integer)
+#fake-duration=-1
+
+[access_realrtsp] # RTSP Real
+
+# Valor de la memòria cau (ms) (integer)
+#realrtsp-caching=3000
+
+[dvdread] # Entrada de DVDRead (sense suport de menú)
+
+# Angle del DVD (integer)
+#dvdread-angle=1
+
+# Valor en ms de la memòria cau (integer)
+#dvdread-caching=300
+
+# Mètode utilitzat per libdvdcss per al desxifrat (string)
+#dvdread-css-method=
+
+[dvb] # Entrada DVB amb suport v4l2
+
+# Valor en ms de la memòria cau (integer)
+#dvb-caching=300
+
+# Targeta adaptadora a sintonitzar (integer)
+#dvb-adapter=0
+
+# Número de dispositiu que s'ha d'utilitzar a l'adaptador (integer)
+#dvb-device=0
+
+# Freqüència del transponedor/múltiplex (integer)
+#dvb-frequency=0
+
+# Mode d'inversió (integer)
+#dvb-inversion=2
+
+# Explora les capacitats de la targeta DVB (boolean)
+#dvb-probe=1
+
+# Mode econòmic (boolean)
+#dvb-budget-mode=0
+
+# Número del satèl·lit en el sistema Diseqc (integer)
+#dvb-satno=0
+
+# Voltatge LNB (integer)
+#dvb-voltage=13
+
+# Alta tensió LNB (boolean)
+#dvb-high-voltage=0
+
+# To de 22kHz (integer)
+#dvb-tone=-1
+
+# Transponedor FEC (integer)
+#dvb-fec=9
+
+# Velocitat de símbol del transponedor en kHz (integer)
+#dvb-srate=27500000
+
+# Antena lnb_lof1 (kHz) (integer)
+#dvb-lnb-lof1=0
+
+# Antena lnb_lof2 (kHz) (integer)
+#dvb-lnb-lof2=0
+
+# Antena lnb_slof (kHz) (integer)
+#dvb-lnb-slof=0
+
+# Tipus de modulació (integer)
+#dvb-modulation=0
+
+# Taxa del codi del flux terrestre d'alta prioritat (FEC) (integer)
+#dvb-code-rate-hp=9
+
+# Taxa del codi del flux terrestre de baixa prioritat (FEC) (integer)
+#dvb-code-rate-lp=9
+
+# Amplada de banda terrestre (integer)
+#dvb-bandwidth=0
+
+# Interval de guarda terrestre (integer)
+#dvb-guard=0
+
+# Mode de transmissió terrestre (integer)
+#dvb-transmission=0
+
+# Mode de jerarquia terrestre  (integer)
+#dvb-hierarchy=0
+
+# Adreça de l’ordinador de l'HTTP (string)
+#dvb-http-host=
+
+# Nom d'usuari de l'HTTP (string)
+#dvb-http-user=
+
+# Contrasenya d'HTTP (string)
+#dvb-http-password=
+
+# HTTP ACL (string)
+#dvb-http-acl=
+
+# Fitxer del certificat (string)
+#dvb-http-intf-cert=
+
+# Fitxer de la clau privada (string)
+#dvb-http-intf-key=
+
+# Fitxer del root-CA (string)
+#dvb-http-intf-ca=
+
+# Fitxer de CRL (string)
+#dvb-http-intf-crl=
+
+[access_mmap] # Entrada del fitxer amb la memòria mapada
+
+# Utilitza el mapatge de la memòria del fitxer (boolean)
+#file-mmap=0
+
+[access_oss] # Entrada d'OSS
+
+# Estèreo (boolean)
+#oss-stereo=1
+
+# Velocitat de mostra (integer)
+#oss-samplerate=48000
+
+# Valor en ms de la memòria cau (integer)
+#oss-caching=300
+
+[access_dv] # Entrada de Vídeo Digital  (Firewire/ieee1394)
+
+# Valor en ms de la memòria cau (integer)
+#dv-caching=60
+
+[access_http] # Entrada de l'HTTP
+
+# Servidor intermediari HTTP (string)
+#http-proxy=
+
+# Contrasenya del servidor intermediari d'HTTP (string)
+#http-proxy-pwd=
+
+# Valor en ms de la memòria cau (integer)
+#http-caching=1200
+
+# Agent usuari d'HTTP (string)
+#http-user-agent=VLC media player - version 1.0.6 Goldeneye - (c) 1996-2010 the VideoLAN team
+
+# Reconnexió automàtica (boolean)
+#http-reconnect=0
+
+# Transmissió continuada (boolean)
+#http-continuous=0
+
+# Envia les galletes (boolean)
+#http-forward-cookies=1
+
+[access_bd] # Entrada de disc Blu-Ray
+
+# Valor en ms de la memòria cau (integer)
+#bd-caching=300
+
+[access_ftp] # Entrada de l'FTP
+
+# Valor en ms de la memòria cau (integer)
+#ftp-caching=600
+
+# Nom d'usuari de l'FTP (string)
+#ftp-user=anonymous
+
+# Contrasenya de l'FTP (string)
+#ftp-pwd=anonymous@example.com
+
+# Compte de l'FTP (string)
+#ftp-account=anonymous
+
+[rtp] # Entrada de protocol de temps real (RTP)
+
+# Longitud de la memòria intermèdia d'RTP de-jitter (ms) (integer)
+#rtp-caching=1000
+
+# Port RTCP (local) (integer)
+#rtcp-port=0
+
+# Clau SRTP (hexadecimal) (string)
+#srtp-key=
+
+# SRTP salt (hexadecimal) (string)
+#srtp-salt=
+
+# Fonts d'RTP màximes (integer)
+#rtp-max-src=1
+
+# Temps excedit de la font d'RTP (en segons) (integer)
+#rtp-timeout=5
+
+# Pèrdua d'informació del número de seqüència RTP màxim  (integer)
+#rtp-max-dropout=3000
+
+# Desordenament del número de seqüència RTP màxim (integer)
+#rtp-max-misorder=100
+
+[v4l2] # Entrada de Video4Linux2
+
+# Estàndard (integer)
+#v4l2-standard=0
+
+# Format d'intensitat cromàtica de l'entrada de vídeo (string)
+#v4l2-chroma=
+
+# Entrada (integer)
+#v4l2-input=0
+
+# Entrada d'àudio (integer)
+#v4l2-audio-input=0
+
+# Mètodes d'entrada i eixida (integer)
+#v4l2-io=0
+
+# Amplària (integer)
+#v4l2-width=-1
+
+# Alçària (integer)
+#v4l2-height=-1
+
+# Relació-aspecte de la imatge n:m (string)
+#v4l2-aspect-ratio=4:3
+
+# Velocitat de fotogrames (float)
+#v4l2-fps=0.000000
+
+# Valor en ms de la memòria cau (integer)
+#v4l2-caching=300
+
+# Fes servir libv4l2 (boolean)
+#v4l2-use-libv4l2=0
+
+# Id del sintonitzador (integer)
+#v4l2-tuner=0
+
+# Freqüència (integer)
+#v4l2-tuner-frequency=-1
+
+# Mode d'àudio (integer)
+#v4l2-tuner-audio-mode=-1
+
+# Reinicialitza els controls v4l2 (boolean)
+#v4l2-controls-reset=0
+
+# Brillantor (integer)
+#v4l2-brightness=-1
+
+# Contrast (integer)
+#v4l2-contrast=-1
+
+# Saturació (integer)
+#v4l2-saturation=-1
+
+# Matís (integer)
+#v4l2-hue=-1
+
+# Nivell de negre (integer)
+#v4l2-black-level=-1
+
+# Balanç del blanc automàtic (integer)
+#v4l2-auto-white-balance=-1
+
+# Fés el balanç del blanc (integer)
+#v4l2-do-white-balance=-1
+
+# Balanç del roig (integer)
+#v4l2-red-balance=-1
+
+# Balanç del blau (integer)
+#v4l2-blue-balance=-1
+
+# Gamma (integer)
+#v4l2-gamma=-1
+
+# Exposició (integer)
+#v4l2-exposure=-1
+
+# Guany automàtic (integer)
+#v4l2-autogain=-1
+
+# Guany (integer)
+#v4l2-gain=-1
+
+# Inversió horitzontal (integer)
+#v4l2-hflip=-1
+
+# Inversió vertical (integer)
+#v4l2-vflip=-1
+
+# Centrat horitzontal (integer)
+#v4l2-hcenter=-1
+
+# Centrament vertical (integer)
+#v4l2-vcenter=-1
+
+# Volum (integer)
+#v4l2-audio-volume=-1
+
+# Balanç (integer)
+#v4l2-audio-balance=-1
+
+# Sense so (boolean)
+#v4l2-audio-mute=0
+
+# Greus (integer)
+#v4l2-audio-bass=-1
+
+# Agut (integer)
+#v4l2-audio-treble=-1
+
+# Potència (integer)
+#v4l2-audio-loudness=-1
+
+# Controls del controlador v4l2 (string)
+#v4l2-set-ctrls=
+
+[adjust] # Filtre de les propietats de la imatge
+
+# Contrast de la imatge (0-2) (float)
+#contrast=1.000000
+
+# Brillantor de la imatge (0-2) (float)
+#brightness=1.000000
+
+# Matís de color de la imatge (0-360) (integer)
+#hue=0
+
+# Saturació de la imatge (0-3) (float)
+#saturation=1.000000
+
+# Gamma de la imatge (0-10) (float)
+#gamma=1.000000
+
+# Llindar de brillantor (boolean)
+#brightness-threshold=0
+
+[dynamicoverlay] # Sobreimpressió de vídeo dinàmica
+
+# FIFO d'entrada (string)
+#overlay-input=
+
+# FIFO d'eixida (string)
+#overlay-output=
+
+[crop] # Filtre d'enquadrat de vídeo
+
+# Retalla la geometria (píxels) (string)
+#crop-geometry=
+
+# Enquadrament automàtic (boolean)
+#autocrop=0
+
+# Relació màxima (x 1000) (integer)
+#autocrop-ratio-max=2405
+
+# Proporció manual (integer)
+#crop-ratio=0
+
+# Nombre d'imatges per canvi (integer)
+#autocrop-time=25
+
+# Nombre de línies per canvi (integer)
+#autocrop-diff=16
+
+# Nombre de píxels que no són negres. (integer)
+#autocrop-non-black-pixels=3
+
+# Percentatge d'omissió (%) (integer)
+#autocrop-skip-percent=17
+
+# Llindar de lluminositat (integer)
+#autocrop-luminance-threshold=40
+
+[remoteosd] # OSD remot sobre VNC
+
+# Amfitrió de VNC (string)
+#rmtosd-host=myvdr
+
+# Port de VNC (integer)
+#rmtosd-port=20001
+
+# Contrasenya de VNC (string)
+#rmtosd-password=
+
+# Interval de soindeig de VNC (integer)
+#rmtosd-update=1000
+
+# Sondeig de VNC (boolean)
+#rmtosd-vnc-polling=0
+
+# Incidències amb el ratolí (boolean)
+#rmtosd-mouse-events=0
+
+# Incidències de tecles (boolean)
+#rmtosd-key-events=0
+
+# Valor de la transparència alfa (per defecte 255) (integer)
+#rmtosd-alpha=255
+
+[extract] # Extrau el filtre de vídeo del component RGB
+
+# Component de RGB que s'ha d'extraure (integer)
+#extract-component=16711680
+
+[alphamask] # Filtre de vídeo de màscara alfa
+
+# Màscara de transparència (string)
+#alphamask-mask=
+
+[croppadd] # Filtre d'escalat de vídeo
+
+# Píxels que s'han de retallar de la part superior (integer)
+#croppadd-croptop=0
+
+# Píxels que s'han de retallar de la part inferior (integer)
+#croppadd-cropbottom=0
+
+# Píxels que s'han de retallar de la part esquerra (integer)
+#croppadd-cropleft=0
+
+# Píxels que s'han de retallar de la part dreta (integer)
+#croppadd-cropright=0
+
+# Pixels que s'han d'afegir a la part superior (integer)
+#croppadd-paddtop=0
+
+# Pixels que s'han d'afegir a la part inferior (integer)
+#croppadd-paddbottom=0
+
+# Pixels que s'han d'afegir a la part esquerra (integer)
+#croppadd-paddleft=0
+
+# Píxels que s'han d'afegir a la part dreta (integer)
+#croppadd-paddright=0
+
+[clone] # Filtre de clonatge de vídeo
+
+# Nombre de clons (integer)
+#clone-count=2
+
+# Mòdul d'eixida de vídeo (string)
+#clone-vout-list=
+
+[motionblur] # Filtre de difuminat del moviment
+
+# Factor de difuminat (1-127) (integer)
+#blur-factor=80
+
+[transform] # Filtre de transformació del vídeo
+
+# Tipus de transformació (string)
+#transform-type=90
+
+[scene] # Filtre d'escenes de vídeo 
+
+# Format de la imatge (string)
+#scene-format=png
+
+# Amplària de la imatge (integer)
+#scene-width=-1
+
+# Alçària de la imatge (integer)
+#scene-height=-1
+
+# Prefix del nom del fitxer (string)
+#scene-prefix=scene
+
+# Prefix del camí del directori (string)
+#scene-path=
+
+# Escriu sempre al mateix fitxer (boolean)
+#scene-replace=0
+
+# Relació de gravació (integer)
+#scene-ratio=50
+
+[blendbench] # Filtre del punt de referència per a la mescla
+
+# Temps que tarda en mesclar-se (integer)
+#blendbench-loops=1000
+
+# Alfa de la imatge barrejada (integer)
+#blendbench-alpha=128
+
+# Imatge sobre la qual mesclar. (string)
+#blendbench-base-image=
+
+# Intensitat cromàtica per a la imatge base (string)
+#blendbench-base-chroma=I420
+
+# Imatge que es mesclarà. (string)
+#blendbench-blend-image=
+
+# Intensitat cromàtica per a la imatge mesclada (string)
+#blendbench-blend-chroma=YUVA
+
+[gradient] # Filtre de vídeo de degradat
+
+# Mode de distorsió (string)
+#gradient-mode=gradient
+
+# Tipus d'imatge degradada (integer)
+#gradient-type=0
+
+# Aplica l'efecte de còmic (boolean)
+#gradient-cartoon=1
+
+[wall] # Filtre de vídeo de divisió
+
+# Nombre de columnes (integer)
+#wall-cols=3
+
+# Nombre de files (integer)
+#wall-rows=3
+
+# Finestres actives (string)
+#wall-active=
+
+# Relació de l'aspecte de l'element (string)
+#wall-element-aspect=4:3
+
+[erase] # Esborra filtre de vídeo
+
+# Màscara d'imatge (string)
+#erase-mask=
+
+# Coordenada X (integer)
+#erase-x=0
+
+# Coordenada Y (integer)
+#erase-y=0
+
+[panoramix] # Panoramix: mur amb filtre de vídeo de simultaneïtat
+
+# Nombre de columnes (integer)
+#panoramix-cols=-1
+
+# Nombre de files (integer)
+#panoramix-rows=-1
+
+# Desplaçament x desplaçament (compensació automàtica) (boolean)
+#panoramix-offset-x=1
+
+# Llargada de l'àrea superposada (en %) (integer)
+#panoramix-bz-length=100
+
+# L’alçària de l'àrea superposada (en %) (integer)
+#panoramix-bz-height=100
+
+# Atenuació (boolean)
+#panoramix-attenuate=1
+
+# Atenuació, començament (en %) (integer)
+#panoramix-bz-begin=0
+
+# Atenuació, mig (en %) (integer)
+#panoramix-bz-middle=50
+
+# Atenuació, acabament (en %) (integer)
+#panoramix-bz-end=100
+
+# Posició del mig (en %) (integer)
+#panoramix-bz-middle-pos=50
+
+# Correcció de la gamma (roig) (float)
+#panoramix-bz-gamma-red=1.000000
+
+# Correcció de la gamma (verd) (float)
+#panoramix-bz-gamma-green=1.000000
+
+# Correcció de la gamma (blau) (float)
+#panoramix-bz-gamma-blue=1.000000
+
+# Black crush per al roig (integer)
+#panoramix-bz-blackcrush-red=140
+
+# Black crush per al verd (integer)
+#panoramix-bz-blackcrush-green=140
+
+# Black crush per al blau (integer)
+#panoramix-bz-blackcrush-blue=140
+
+# White crush per al roig (integer)
+#panoramix-bz-whitecrush-red=200
+
+# White crush per al verd (integer)
+#panoramix-bz-whitecrush-green=200
+
+# White crush per al blau (integer)
+#panoramix-bz-whitecrush-blue=200
+
+# Nivell de negre per al roig (integer)
+#panoramix-bz-blacklevel-red=150
+
+# Nivell de negre per al verd (integer)
+#panoramix-bz-blacklevel-green=150
+
+# Nivell de negre per al blau (integer)
+#panoramix-bz-blacklevel-blue=150
+
+# Nivell de blanc per al roig (integer)
+#panoramix-bz-whitelevel-red=0
+
+# Nivell de blanc per al verd (integer)
+#panoramix-bz-whitelevel-green=0
+
+# Nivell de blanc per al blau (integer)
+#panoramix-bz-whitelevel-blue=0
+
+# Opció Xinerama (boolean)
+#panoramix-xinerama=1
+
+# Finestres actives (string)
+#panoramix-active=
+
+[bluescreen] # Filtre de vídeo pantalla blava
+
+# Valor U de la pantalla blava (integer)
+#bluescreen-u=120
+
+# Valor V de la pantalla blava (integer)
+#bluescreen-v=90
+
+# Tolerància U de la pantalla blava (integer)
+#bluescreen-ut=17
+
+# Tolerància V de la pantalla blava (integer)
+#bluescreen-vt=17
+
+[rotate] # Filtre de vídeo de rotació
+
+# Angle en graus (integer)
+#rotate-angle=30
+
+[sharpen] # Augmenta el contrast entre els contorns.
+
+# Força d'agudització (0-2) (float)
+#sharpen-sigma=0.050000
+
+[gaussianblur] # Filtre de vídeo de desenfocament gaussià
+
+# Desviació estàndard gaussiana (float)
+#gaussianblur-sigma=2.000000
+
+[puzzle] # Filtre de videojoc interactiu de trencaclosques
+
+# Nombre de files del trencaclosques (integer)
+#puzzle-rows=4
+
+# Nombre de columnes del trencaclosques (integer)
+#puzzle-cols=4
+
+# Fes un mosaic amb una ranura negra  (boolean)
+#puzzle-black-slot=0
+
+[swscale] # Filtre d'escalat de vídeo
+
+# Mode escalat (integer)
+#swscale-mode=2
+
+[canvas] # Redimensiona i farcix un vídeo automàticament
+
+# Amplària d'eixida (integer)
+#canvas-width=0
+
+# Alçària d'eixida (integer)
+#canvas-height=0
+
+# Relació d'aspecte de la imatge d'eixida (string)
+#canvas-aspect=
+
+# Farcix el vídeo (boolean)
+#canvas-padd=1
+
+[logo] # Subfiltre del logotip
+
+# Nom dels fitxers de logotip (string)
+#logo-file=
+
+# Coordenada X (integer)
+#logo-x=0
+
+# Coordenada Y (integer)
+#logo-y=0
+
+# Temps de la imatge del logotip individual en ms  (integer)
+#logo-delay=1000
+
+# Animació del logotip # de bucles (integer)
+#logo-repeat=-1
+
+# Transparència del logotip (integer)
+#logo-transparency=255
+
+# Posició del logotip (integer)
+#logo-position=-1
+
+[mosaic] # Subfiltre de vídeo de mosaic
+
+# Transparència (integer)
+#mosaic-alpha=255
+
+# Alçària (integer)
+#mosaic-height=100
+
+# Amplària (integer)
+#mosaic-width=100
+
+# Alineació del mosaic (integer)
+#mosaic-align=5
+
+# Coordenada X de l'angle superior esquerre (integer)
+#mosaic-xoffset=0
+
+# Coordenada Y de l'angle superior esquerre (integer)
+#mosaic-yoffset=0
+
+# Amplària del contorn (integer)
+#mosaic-borderw=0
+
+# Alçària del contorn (integer)
+#mosaic-borderh=0
+
+# Mètode de posicionament (integer)
+#mosaic-position=0
+
+# Nombre de files (integer)
+#mosaic-rows=2
+
+# Nombre de columnes (integer)
+#mosaic-cols=2
+
+# Conserva la relació d'aspecte (boolean)
+#mosaic-keep-aspect-ratio=0
+
+# Conserva la mida original (boolean)
+#mosaic-keep-picture=0
+
+# Orde d'elements (string)
+#mosaic-order=
+
+# Mode silenciós (string)
+#mosaic-offsets=
+
+# Retard (integer)
+#mosaic-delay=0
+
+[colorthres] # Filtre del llindar del color
+
+# Color (integer)
+#colorthres-color=16711680
+
+# Llindar de saturació (integer)
+#colorthres-saturationthres=20
+
+# Llindar de similitud (integer)
+#colorthres-similaritythres=15
+
+[postproc] # Filtre de processament posterior de vídeo
+
+# Qualitat del postprocessament  (integer)
+#postproc-q=6
+
+# Cadenes de filtre de postprocessament de FFmpeg (string)
+#postproc-name=default
+
+[osdmenu] # Menú en pantalla
+
+# Coordenada X (integer)
+#osdmenu-x=-1
+
+# Coordenada Y (integer)
+#osdmenu-y=-1
+
+# Posició del menú (integer)
+#osdmenu-position=8
+
+# Fitxer de configuració (string)
+#osdmenu-file=/usr/share/vlc/osdmenu/default.cfg
+
+# Camí a les imatges del menú d'OSD (string)
+#osdmenu-file-path=
+
+# Temps d‘espera del menú (integer)
+#osdmenu-timeout=15
+
+# Interval d'actualització del menú (integer)
+#osdmenu-update=300
+
+# Valor de la transparència alfa (per defecte 255) (integer)
+#osdmenu-alpha=255
+
+[marq] # Pantalla de marquesina
+
+# Text (string)
+#marq-marquee=VLC
+
+# Desplaçament X (integer)
+#marq-x=0
+
+# Desplaçament Y (integer)
+#marq-y=0
+
+# Posició de la marquesina (integer)
+#marq-position=-1
+
+# Opacitat (integer)
+#marq-opacity=255
+
+# Color (integer)
+#marq-color=16777215
+
+# Grandària de la lletra, en píxels (integer)
+#marq-size=-1
+
+# Temporització (integer)
+#marq-timeout=0
+
+# Actualitza el període en ms (integer)
+#marq-refresh=1000
+
+[rss] # Pantalla dels canals Atom i RSS
+
+# Les URL del canal (string)
+#rss-urls=rss
+
+# Desplaçament X (integer)
+#rss-x=0
+
+# Desplaçament Y (integer)
+#rss-y=0
+
+# Posició del text (integer)
+#rss-position=-1
+
+# Opacitat (integer)
+#rss-opacity=255
+
+# Color (integer)
+#rss-color=16777215
+
+# Grandària de la lletra, en píxels (integer)
+#rss-size=-1
+
+# Velocitat dels canals (integer)
+#rss-speed=100000
+
+# Llargària màxima (integer)
+#rss-length=60
+
+# Temps d'actualització (integer)
+#rss-ttl=1800
+
+# Imatges de canal (boolean)
+#rss-images=1
+
+# Mode de visualització del títol (integer)
+#rss-title=-1
+
+[deinterlace] # Filtre de desentrellaçat de vídeo 
+
+# Mode desentrellaçat (string)
+#deinterlace-mode=discard
+
+# Mode de desentrellaçat de la reproducció (string)
+#sout-deinterlace-mode=blend
+
+[podcast] # Podcasts
+
+# Llista D'URL de Podcast (string)
+#podcast-urls=
+
+[sap] # Anuncis SAP
+
+# Adreces multidestinació SAP (string)
+#sap-addr=
+
+# Abast IPv4 SAP (boolean)
+#sap-ipv4=1
+
+# IPv6 SAP (boolean)
+#sap-ipv6=1
+
+# Temps excedit de SAP (en segons) (integer)
+#sap-timeout=1800
+
+# Intenta analitzar l'anunci (boolean)
+#sap-parse=1
+
+# Mode SAP Strict (boolean)
+#sap-strict=0
+
+[shout] # Llistats de ràdio per Shoutcast
+
+[main] # Programa principal
+
+# Habilita l'àudio (boolean)
+#audio=1
+
+# Volum d'àudio predeterminat (integer)
+#volume=256
+
+# Volum de l'eixida d’àudio (integer)
+#volume-step=32
+
+# Freqüència d'eixida de l'àudio (Hz) (integer)
+#aout-rate=-1
+
+# Remostratge de l'àudio d'alta qualitat (boolean)
+#hq-resampling=1
+
+# Utilitza l'eixida d'àudio S/PDIF quan siga possible (boolean)
+#spdif=0
+
+# Imposa la detecció de Dolby Surround (integer)
+#force-dolby-surround=0
+
+# Compensació de la dessincronització de l'àudio (integer)
+#audio-desync=0
+
+# Mode de guany de reproducció (string)
+#audio-replay-gain-mode=none
+
+# Reproduïx la preamplificació (float)
+#audio-replay-gain-preamp=0.000000
+
+# Guany de reproducció per defecte (float)
+#audio-replay-gain-default=-7.000000
+
+# Protecció de pics (boolean)
+#audio-replay-gain-peak-protection=1
+
+# Habilita l'ampliació de temps d'àudio (boolean)
+#audio-time-stretch=1
+
+# Mòdul d'eixida de l'àudio (string)
+#aout=
+
+# Filtres d'àudio (string)
+#audio-filter=
+
+# Visualitzacions de l'àudio (string)
+#audio-visual=
+
+# Habilita el vídeo (boolean)
+#video=1
+
+# Eixida de vídeo en escala de grisos (boolean)
+#grayscale=0
+
+# Eixida de vídeo en pantalla completa (boolean)
+#fullscreen=0
+
+# Vídeo incrustat (boolean)
+#embedded-video=1
+
+# Omet els darrers fotogrames (boolean)
+#drop-late-frames=1
+
+# Omet els fotogrames (boolean)
+#skip-frames=1
+
+# Sincronització silenciosa (boolean)
+#quiet-synchro=0
+
+# gestió de les incidències de teclat i ratolí a nivell de vout. (integer)
+#vout-event=1
+
+# Eixida de vídeo superposada (boolean)
+#overlay=1
+
+# Sempre per damunt (boolean)
+#video-on-top=0
+
+# Inhabilita el protector de pantalla (boolean)
+#disable-screensaver=1
+
+# Mostra el títol del suport en el vídeo (boolean)
+#video-title-show=1
+
+# Mostra el títol del vídeo durant x mil·lisegons (integer)
+#video-title-timeout=5000
+
+# Posició del títol del vídeo (integer)
+#video-title-position=8
+
+# Oculta el cursor i el controlador de pantalla completa després de x mil·lisegons (integer)
+#mouse-hide-timeout=1500
+
+# Directori (o nom de fitxer) de la instantània del vídeo (string)
+#snapshot-path=
+
+# Prefix del fitxer de la instantània del vídeo (string)
+#snapshot-prefix=vlcsnap-
+
+# Format de la instantània del vídeo (string)
+#snapshot-format=png
+
+# Mostra la vista prèvia de la captura del vídeo (boolean)
+#snapshot-preview=1
+
+# Utilitza nombres seqüencials en comptes de marques horàries (boolean)
+#snapshot-sequential=0
+
+# Amplària de la instantània del vídeo (integer)
+#snapshot-width=-1
+
+# Alçària de la instantània del vídeo (integer)
+#snapshot-height=-1
+
+# Amplària del vídeo (integer)
+#width=-1
+
+# Alçària del vídeo (integer)
+#height=-1
+
+# Coordenada X del vídeo (integer)
+#video-x=-1
+
+# Coordenada Y del vídeo (integer)
+#video-y=-1
+
+# Retall de la imatge del vídeo (string)
+#crop=
+
+# Llista personalitzada de proporcions d'enquadrament (string)
+#custom-crop-ratios=
+
+# Relació d'aspecte de la font (string)
+#aspect-ratio=
+
+# Canvi automàtic de l'escala del vídeo (boolean)
+#autoscale=1
+
+# Factor de canvi d'escala del vídeo (float)
+#scale=1.000000
+
+# Relació d'aspecte de píxel de monitor (string)
+#monitor-par=
+
+# Llista personalitzada de relacions d'aspecte (string)
+#custom-aspect-ratios=
+
+# Fixa l'alçària d'HDTV (boolean)
+#hdtv-fix=1
+
+# Decoracions de finestres (boolean)
+#video-deco=1
+
+# Títol del vídeo (string)
+#video-title=
+
+# Alineació del vídeo (integer)
+#align=0
+
+# Fes un zoom al vídeo (float)
+#zoom=1.000000
+
+# Mòdul de l'eixida de vídeo (string)
+#vout=
+
+# Mòdul dels filtres de vídeo (string)
+#video-filter=
+
+# Mòdul del filtre de l'eixida de vídeo (string)
+#vout-filter=
+
+# Habilita les subimatges (boolean)
+#spu=1
+
+# En pantalla (boolean)
+#osd=1
+
+# Mòdul de renderització de text (string)
+#text-renderer=
+
+# Utilitza el fitxer de subtítols (string)
+#sub-file=
+
+# Autodetecta els fitxers de subtítols (boolean)
+#sub-autodetect-file=1
+
+# Aproximació en autodetecció de subtítols.  (integer)
+#sub-autodetect-fuzzy=3
+
+# Camins per a l'autodetecció dels subtítols (string)
+#sub-autodetect-path=./Subtitles, ./subtitles
+
+# Imposa la posició dels subtítols (integer)
+#sub-margin=0
+
+# Mòdul de filtrat de subimatges (string)
+#sub-filter=
+
+# Programa (integer)
+#program=0
+
+# Programes (string)
+#programs=
+
+# Pista d'àudio (integer)
+#audio-track=-1
+
+# Pista de subtítols (integer)
+#sub-track=-1
+
+# Idioma de l'àudio (string)
+#audio-language=
+
+# Idioma dels subtítols (string)
+#sub-language=
+
+# ID de la pista d'àudio (integer)
+#audio-track-id=-1
+
+# ID de la pista de subtítols (integer)
+#sub-track-id=-1
+
+# Repeticions d'entrada (integer)
+#input-repeat=0
+
+# Hora d'inici (float)
+#start-time=0.000000
+
+# Hora de parada (float)
+#stop-time=0.000000
+
+# Temps d'execució (float)
+#run-time=0.000000
+
+# Busca ràpida (boolean)
+#input-fast-seek=0
+
+# Llista d'entrada (string)
+#input-list=
+
+# Entrada esclava (experimental) (string)
+#input-slave=
+
+# Llista d'adreces d'interés per a un flux (string)
+#bookmarks=
+
+# Dispositiu de DVD (string)
+dvd=/dev/sr0
+
+# Dispositiu de VCD (string)
+vcd=/dev/sr0
+
+# Dispositiu del CD d’àudio (string)
+cd-audio=/dev/sr0
+
+# Port UDP (integer)
+#server-port=1234
+
+# MTU de la interfície de xarxa (integer)
+#mtu=1400
+
+# Imposa IPv6 (boolean)
+#ipv6=0
+
+# Imposa IPv4 (boolean)
+#ipv4=0
+
+# Temps d'espera de la connexió TCP (integer)
+#ipv4-timeout=5000
+
+# Servidor SOCKS (string)
+#socks=
+
+# Nom de l’usuari del SOCKS (string)
+#socks-user=
+
+# Contrasenya del SOCKS (string)
+#socks-pwd=
+
+# Metadades del títol (string)
+#meta-title=
+
+# Metadades de l'autor (string)
+#meta-author=
+
+# Metadades de l'artista (string)
+#meta-artist=
+
+# Metadada del gènere (string)
+#meta-genre=
+
+# Metadades del copyright (string)
+#meta-copyright=
+
+# Metadades de la descripció (string)
+#meta-description=
+
+# Metadada de la data (string)
+#meta-date=
+
+# Metadades de l'URL (string)
+#meta-url=
+
+# Comptador mitjà de referència del rellotge  (integer)
+#cr-average=40
+
+# Sincronització del rellotge (integer)
+#clock-synchro=-1
+
+# Sincronització de la xarxa (boolean)
+#network-synchronisation=0
+
+# Directori o nom del fitxer de gravació (string)
+#input-record-path=
+
+# Dóna preferència a la gravació del flux de dades original (boolean)
+#input-record-native=1
+
+# Directori de la gravació programada (string)
+#input-timeshift-path=
+
+# Granularitat de la gravació programada (integer)
+#input-timeshift-granularity=-1
+
+# Llista dels descodificadors preferits (string)
+#codec=
+
+# Llista dels codificadors preferits (string)
+#encoder=
+
+# Mòdul d'accés (string)
+#access=
+
+# Mòdul del desmultiplexor (string)
+#demux=
+
+# Preferix connectors de sistema per damunt del que té el VLC (boolean)
+#prefer-system-codecs=0
+
+# Mòdul de filtrat de flux (string)
+#stream-filter=
+
+# Cadena de flux d'eixida per defecte (string)
+#sout=
+
+# Visualitza mentres es transmet (boolean)
+#sout-display=0
+
+# Conserva el flux d'eixida obert (boolean)
+#sout-keep=0
+
+# Habilita la reproducció en temps real per a tot l'ES (boolean)
+#sout-all=0
+
+# Habilita el flux d'eixida d'àudio (boolean)
+#sout-audio=1
+
+# Habilita el flux d'eixida de vídeo (boolean)
+#sout-video=1
+
+# Habilita el flux d'eixida SPU (boolean)
+#sout-spu=1
+
+# Memòria cau del multiplexor del flux d'eixida (integer)
+#sout-mux-caching=1500
+
+# Fitxer de configuració del VLM (string)
+#vlm-conf=
+
+# Mòdul del multiplexor (string)
+#mux=
+
+# Mòdul d'eixida d'accés (string)
+#access_output=
+
+# Límit Hop (TTL) (integer)
+#ttl=-1
+
+# Interfície d'eixida multidifusió (string)
+#miface=
+
+# Adreça de la interfície d'eixida multidestinació d'IPv4 (string)
+#miface-addr=
+
+# Punt de codi DiffServ (integer)
+#dscp=0
+
+# Llista d'empaquetadors preferits (string)
+#packetizer=
+
+# Interval d'anunci de SAP (integer)
+#sap-interval=5
+
+# Habilita el suport FPU (boolean)
+#fpu=1
+
+# Habilita el suport CPU MMX (boolean)
+#mmx=1
+
+# Habilita el suport CPU 3D Now! (boolean)
+#3dn=1
+
+# Habilita el suport CPU MMX EXT (boolean)
+#mmxext=1
+
+# Habilita el suport CPU SSE (boolean)
+#sse=1
+
+# Habilita el suport CPU SSE2 (boolean)
+#sse2=1
+
+# Mòdul de la còpia de memòria (string)
+#memcpy=
+
+# Utilitza una memòria cau dels connectors (boolean)
+#plugins-cache=1
+
+# Camí de busca dels mòduls (string)
+#plugin-path=
+
+# Permet prioritat de temps real (boolean)
+#rt-priority=0
+
+# Ajusta la prioritat del VLC (integer)
+#rt-offset=0
+
+# Inhabilita el dimoni administrador de potència durant la reproducció (boolean)
+#inhibit=1
+
+# Permet executar només una còpia de VLC (boolean)
+#one-instance=0
+
+# Un només quan s'ha començat des d'un fitxer (boolean)
+#one-instance-when-started-from-file=1
+
+# Reproduïx sempre els fitxers aleatòriament  (boolean)
+#random=0
+
+# Repetix-ho tot (boolean)
+#loop=0
+
+# Repetix l'element actual (boolean)
+#repeat=0
+
+# Reproduïx i para (boolean)
+#play-and-exit=0
+
+# Reproduïx i para (boolean)
+#play-and-stop=0
+
+# Utilitza la biblioteca multimèdia (boolean)
+#media-library=1
+
+# Mostra l'arbre de la llista de reproducció (boolean)
+#playlist-tree=0
+
+# Flux per defecte (string)
+#open=
+
+# Analitza prèviament els fitxers de forma automàtica (boolean)
+#auto-preparse=1
+
+# Política de les caràtules (integer)
+#album-art=0
+
+# Mòdul del descobriment de servicis (string)
+#services-discovery=
+
+# Detall (0,1,2) (integer)
+#verbose=0
+
+# Seleccioneu els objectes que han d'imprimir els missatges de depuració (string)
+#verbose-objects=
+
+# Silenci (boolean)
+#quiet=0
+
+# Executa com a procés de dimoni (boolean)
+#daemon=0
+
+# Escriu l'identificador del procés en un fitxer (string)
+#pidfile=
+
+# Registra-ho en un fitxer (boolean)
+#file-logging=0
+
+# Registra-ho en syslog (boolean)
+#syslog=0
+
+# Missatges de color (boolean)
+#color=1
+
+# Mostra les opcions avançades (boolean)
+#advanced=0
+
+# Interacció de la interfície (boolean)
+#interact=1
+
+# Mostra la interfície amb el ratolí (boolean)
+#show-intf=0
+
+# Recull estadístiques (boolean)
+#stats=1
+
+# Mòdul de la interfície (string)
+#intf=
+
+# Mòduls addicionals de la interfície (string)
+#extraintf=
+
+# Interfícies de control (string)
+#control=
+
+# Pantalla completa (key)
+#key-toggle-fullscreen=f
+
+# Pantalla completa (key)
+#global-key-toggle-fullscreen=Unset
+
+# Deixa-ho a pantalla completa (key)
+#key-leave-fullscreen=Esc
+
+# Deixa-ho a pantalla completa (key)
+#global-key-leave-fullscreen=Unset
+
+# Reproduïx/Posa en pausa (key)
+#key-play-pause=Space
+
+# Reproduïx/Posa en pausa (key)
+#global-key-play-pause=Unset
+
+# Només posa en pausa (key)
+#key-pause=Unset
+
+# Només posa en pausa (key)
+#global-key-pause=Unset
+
+# Reproduïx només (key)
+#key-play=Unset
+
+# Reproduïx només (key)
+#global-key-play=Unset
+
+# Més ràpid (key)
+#key-faster=+
+
+# Més ràpid (key)
+#global-key-faster=Unset
+
+# Més lent (key)
+#key-slower=-
+
+# Més lent (key)
+#global-key-slower=Unset
+
+# Velocitat normal (key)
+#key-rate-normal==
+
+# Velocitat normal (key)
+#global-key-rate-normal=Unset
+
+# Més ràpid (detallat) (key)
+#key-rate-faster-fine=]
+
+# Més ràpid (detallat) (key)
+#global-key-rate-faster-fine=Unset
+
+# Més lent (detallat) (key)
+#key-rate-slower-fine=[
+
+# Més lent (detallat) (key)
+#global-key-rate-slower-fine=Unset
+
+# Següent (key)
+#key-next=n
+
+# Següent (key)
+#global-key-next=Unset
+
+# Anterior (key)
+#key-prev=p
+
+# Anterior (key)
+#global-key-prev=Unset
+
+# Para (key)
+#key-stop=s
+
+# Para (key)
+#global-key-stop=Unset
+
+# Posició (key)
+#key-position=t
+
+# Posició (key)
+#global-key-position=Unset
+
+# Vés arrere una miqueta (key)
+#key-jump-extrashort=Shift-Left
+
+# Vés arrere una miqueta (key)
+#global-key-jump-extrashort=Unset
+
+# Vés una miqueta avant (key)
+#key-jump+extrashort=Shift-Right
+
+# Vés una miqueta avant (key)
+#global-key-jump+extrashort=Unset
+
+# Vés un poc arrere (key)
+#key-jump-short=Alt-Left
+
+# Vés un poc arrere (key)
+#global-key-jump-short=Unset
+
+# Vés avant un poc (key)
+#key-jump+short=Alt-Right
+
+# Vés avant un poc (key)
+#global-key-jump+short=Unset
+
+# Vés una mica més arrere (key)
+#key-jump-medium=Ctrl-Left
+
+# Vés una mica més arrere (key)
+#global-key-jump-medium=Unset
+
+# Vés una mica més avant (key)
+#key-jump+medium=Ctrl-Right
+
+# Vés una mica més avant (key)
+#global-key-jump+medium=Unset
+
+# Vés molt arrere (key)
+#key-jump-long=Alt-Ctrl-Left
+
+# Vés molt arrere (key)
+#global-key-jump-long=Unset
+
+# Vés molt avant (key)
+#key-jump+long=Alt-Ctrl-Right
+
+# Vés molt avant (key)
+#global-key-jump+long=Unset
+
+# Següent fotograma (key)
+#key-frame-next=e
+
+# Següent fotograma (key)
+#global-key-frame-next=Unset
+
+# Activa (key)
+#key-nav-activate=Enter
+
+# Activa (key)
+#global-key-nav-activate=Unset
+
+# Mou cap amunt (key)
+#key-nav-up=Up
+
+# Mou cap amunt (key)
+#global-key-nav-up=Unset
+
+# Mou cap avall (key)
+#key-nav-down=Down
+
+# Mou cap avall (key)
+#global-key-nav-down=Unset
+
+# Mou cap a l'esquerra (key)
+#key-nav-left=Left
+
+# Mou cap a l'esquerra (key)
+#global-key-nav-left=Unset
+
+# Mou cap a la dreta (key)
+#key-nav-right=Right
+
+# Mou cap a la dreta (key)
+#global-key-nav-right=Unset
+
+# Vés al menú del DVD (key)
+#key-disc-menu=Shift-m
+
+# Vés al menú del DVD (key)
+#global-key-disc-menu=Unset
+
+# Selecciona el títol anterior de DVD (key)
+#key-title-prev=Shift-o
+
+# Selecciona el títol anterior de DVD (key)
+#global-key-title-prev=Unset
+
+# Selecciona el títol següent de DVD (key)
+#key-title-next=Shift-b
+
+# Selecciona el títol següent de DVD (key)
+#global-key-title-next=Unset
+
+# Selecciona el capítol anterior del DVD (key)
+#key-chapter-prev=Shift-p
+
+# Selecciona el capítol anterior del DVD (key)
+#global-key-chapter-prev=Unset
+
+# Selecciona el capítol següent del DVD (key)
+#key-chapter-next=Shift-n
+
+# Selecciona el capítol següent del DVD (key)
+#global-key-chapter-next=Unset
+
+# Ix (key)
+#key-quit=Ctrl-q
+
+# Ix (key)
+#global-key-quit=Unset
+
+# Apuja el volum (key)
+#key-vol-up=Ctrl-Up
+
+# Apuja el volum (key)
+#global-key-vol-up=Unset
+
+# Abaixa el volum (key)
+#key-vol-down=Ctrl-Down
+
+# Abaixa el volum (key)
+#global-key-vol-down=Unset
+
+# Sense so (key)
+#key-vol-mute=m
+
+# Sense so (key)
+#global-key-vol-mute=Unset
+
+# Avança els subtítols (key)
+#key-subdelay-up=h
+
+# Avança els subtítols (key)
+#global-key-subdelay-up=Unset
+
+# Retarda els subtítols (key)
+#key-subdelay-down=g
+
+# Retarda els subtítols (key)
+#global-key-subdelay-down=Unset
+
+# Avança l'àudio (key)
+#key-audiodelay-up=k
+
+# Avança l'àudio (key)
+#global-key-audiodelay-up=Unset
+
+# Retarda l'àudio (key)
+#key-audiodelay-down=j
+
+# Retarda l'àudio (key)
+#global-key-audiodelay-down=Unset
+
+# Fes un cicle per la pista d'àudio (key)
+#key-audio-track=b
+
+# Fes un cicle per la pista d'àudio (key)
+#global-key-audio-track=Unset
+
+# Fes un cicle pels dispositius d'àudio (key)
+#key-audiodevice-cycle=Shift-a
+
+# Fes un cicle pels dispositius d'àudio (key)
+#global-key-audiodevice-cycle=Unset
+
+# Fes un cicle per la pista de subtítols  (key)
+#key-subtitle-track=v
+
+# Fes un cicle per la pista de subtítols  (key)
+#global-key-subtitle-track=Unset
+
+# Fes un cicle per la relació d'aspecte de la font (key)
+#key-aspect-ratio=a
+
+# Fes un cicle per la relació d'aspecte de la font (key)
+#global-key-aspect-ratio=Unset
+
+# Fe un cicle per l'enquadramentl del vídeo (key)
+#key-crop=c
+
+# Fe un cicle per l'enquadramentl del vídeo (key)
+#global-key-crop=Unset
+
+# Commuta l'escalat automàtic (key)
+#key-toggle-autoscale=o
+
+# Commuta l'escalat automàtic (key)
+#global-key-toggle-autoscale=Unset
+
+# Incrementa el factor d'escalat (key)
+#key-incr-scalefactor=Alt-o
+
+# Incrementa el factor d'escalat (key)
+#global-key-incr-scalefactor=Unset
+
+# Reduïx el factor d'escalat (key)
+#key-decr-scalefactor=Alt-Shift-o
+
+# Reduïx el factor d'escalat (key)
+#global-key-decr-scalefactor=Unset
+
+# Fes un cicle pels modes desentrellaçats (key)
+#key-deinterlace=d
+
+# Fes un cicle pels modes desentrellaçats (key)
+#global-key-deinterlace=Unset
+
+# Mostra la interfície (key)
+#key-intf-show=i
+
+# Mostra la interfície (key)
+#global-key-intf-show=Unset
+
+# Oculta la interfície (key)
+#key-intf-hide=Shift-i
+
+# Oculta la interfície (key)
+#global-key-intf-hide=Unset
+
+# Pren una instantània del vídeo (key)
+#key-snapshot=Shift-s
+
+# Pren una instantània del vídeo (key)
+#global-key-snapshot=Unset
+
+# Vés arrere en l'historial de navegació (key)
+#key-history-back=Shift-g
+
+# Vés arrere en l'historial de navegació (key)
+#global-key-history-back=Unset
+
+# Vés avant en l'historial de navegació (key)
+#key-history-forward=Shift-h
+
+# Vés avant en l'historial de navegació (key)
+#global-key-history-forward=Unset
+
+# Grava (key)
+#key-record=Shift-r
+
+# Grava (key)
+#global-key-record=Unset
+
+# Aboca (key)
+#key-dump=Shift-d
+
+# Aboca (key)
+#global-key-dump=Unset
+
+# Zoom (key)
+#key-zoom=z
+
+# Zoom (key)
+#global-key-zoom=Unset
+
+# Desfés el zoom (key)
+#key-unzoom=Shift-z
+
+# Desfés el zoom (key)
+#global-key-unzoom=Unset
+
+# Commuta el mode de fons de pantalla en l'eixida de vídeo (key)
+#key-wallpaper=w
+
+# Commuta el mode de fons de pantalla en l'eixida de vídeo (key)
+#global-key-wallpaper=Unset
+
+# Mostra el menú OSD per damunt de l'eixida de vídeo (key)
+#key-menu-on=Alt-Shift-m
+
+# Mostra el menú OSD per damunt de l'eixida de vídeo (key)
+#global-key-menu-on=Unset
+
+# No mostres el menú OSD en l'eixida de vídeo (key)
+#key-menu-off=Alt-Ctrl-m
+
+# No mostres el menú OSD en l'eixida de vídeo (key)
+#global-key-menu-off=Unset
+
+# Giny de realçament a la dreta (key)
+#key-menu-right=Alt-Shift-Right
+
+# Giny de realçament a la dreta (key)
+#global-key-menu-right=Unset
+
+# Giny de realçat a la dreta (key)
+#key-menu-left=Alt-Shift-Left
+
+# Giny de realçat a la dreta (key)
+#global-key-menu-left=Unset
+
+# Giny de realçament en la part superior (key)
+#key-menu-up=Alt-Shift-Up
+
+# Giny de realçament en la part superior (key)
+#global-key-menu-up=Unset
+
+# Giny de realçat en la part inferior (key)
+#key-menu-down=Alt-Shift-Down
+
+# Giny de realçat en la part inferior (key)
+#global-key-menu-down=Unset
+
+# Selecciona el giny actual (key)
+#key-menu-select=Alt-Shift-Enter
+
+# Selecciona el giny actual (key)
+#global-key-menu-select=Unset
+
+# Retalla un píxel de la part superior del vídeo (key)
+#key-crop-top=Alt-r
+
+# Retalla un píxel de la part superior del vídeo (key)
+#global-key-crop-top=Unset
+
+# Afegix un píxel a la part superior del vídeo (key)
+#key-uncrop-top=Alt-Shift-r
+
+# Afegix un píxel a la part superior del vídeo (key)
+#global-key-uncrop-top=Unset
+
+# Retalla un píxel de l'esquerra del vídeo (key)
+#key-crop-left=Alt-d
+
+# Retalla un píxel de l'esquerra del vídeo (key)
+#global-key-crop-left=Unset
+
+# Afegix un píxel a l'esquerra del vídeo (key)
+#key-uncrop-left=Alt-Shift-d
+
+# Afegix un píxel a l'esquerra del vídeo (key)
+#global-key-uncrop-left=Unset
+
+# Retalla un píxel de la part inferior del vídeo (key)
+#key-crop-bottom=Alt-c
+
+# Retalla un píxel de la part inferior del vídeo (key)
+#global-key-crop-bottom=Unset
+
+# Afegix un píxel a la part inferior del vídeo (key)
+#key-uncrop-bottom=Alt-Shift-c
+
+# Afegix un píxel a la part inferior del vídeo (key)
+#global-key-uncrop-bottom=Unset
+
+# Retalla un píxel de la dreta del vídeo (key)
+#key-crop-right=Alt-f
+
+# Retalla un píxel de la dreta del vídeo (key)
+#global-key-crop-right=Unset
+
+# Afegix un píxel a la dreta del vídeo (key)
+#key-uncrop-right=Alt-Shift-f
+
+# Afegix un píxel a la dreta del vídeo (key)
+#global-key-uncrop-right=Unset
+
+# Aleatori (key)
+#key-random=r
+
+# Aleatori (key)
+#global-key-random=Unset
+
+# Normal/Repetix/Bucle  (key)
+#key-loop=l
+
+# Normal/Repetix/Bucle  (key)
+#global-key-loop=Unset
+
+# 1:4 Un quart (key)
+#key-zoom-quarter=Ctrl-1
+
+# 1:4 Un quart (key)
+#global-key-zoom-quarter=Unset
+
+# 1:2 la mitat (key)
+#key-zoom-half=Ctrl-2
+
+# 1:2 la mitat (key)
+#global-key-zoom-half=Unset
+
+# 1:1 Original (key)
+#key-zoom-original=Ctrl-3
+
+# 1:1 Original (key)
+#global-key-zoom-original=Unset
+
+# 2:1 Doble (key)
+#key-zoom-double=Ctrl-4
+
+# 2:1 Doble (key)
+#global-key-zoom-double=Unset
+
+# Longitud del salt molt curt (integer)
+#extrashort-jump-size=3
+
+# Longitud del salt curt (integer)
+#short-jump-size=10
+
+# Longitud del salt mitjà (integer)
+#medium-jump-size=60
+
+# Longitud del salt llarg (integer)
+#long-jump-size=300
+
+# Establix l'adreça d'interés 1 de la llista de reproducció (key)
+#key-set-bookmark1=Ctrl-F1
+
+# Establix l'adreça d'interés 1 de la llista de reproducció (key)
+#global-key-set-bookmark1=Unset
+
+# Establix l'adreça d'interés 2 de la llista de reproducció (key)
+#key-set-bookmark2=Ctrl-F2
+
+# Establix l'adreça d'interés 2 de la llista de reproducció (key)
+#global-key-set-bookmark2=Unset
+
+# Establix l'adreça d'interés 3 de la llista de reproducció (key)
+#key-set-bookmark3=Ctrl-F3
+
+# Establix l'adreça d'interés 3 de la llista de reproducció (key)
+#global-key-set-bookmark3=Unset
+
+# Establix l'adreça d'interés 4 de la llista de reproducció (key)
+#key-set-bookmark4=Ctrl-F4
+
+# Establix l'adreça d'interés 4 de la llista de reproducció (key)
+#global-key-set-bookmark4=Unset
+
+# Establix l'adreça d'interés 5 de la llista de reproducció (key)
+#key-set-bookmark5=Ctrl-F5
+
+# Establix l'adreça d'interés 5 de la llista de reproducció (key)
+#global-key-set-bookmark5=Unset
+
+# Establix l'adreça d'interés 6 de la llista de reproducció (key)
+#key-set-bookmark6=Ctrl-F6
+
+# Establix l'adreça d'interés 6 de la llista de reproducció (key)
+#global-key-set-bookmark6=Unset
+
+# Establix l'adreça d'interés 7 de la llista de reproducció (key)
+#key-set-bookmark7=Ctrl-F7
+
+# Establix l'adreça d'interés 7 de la llista de reproducció (key)
+#global-key-set-bookmark7=Unset
+
+# Establix l'adreça d'interés 8 de la llista de reproducció (key)
+#key-set-bookmark8=Ctrl-F8
+
+# Establix l'adreça d'interés 8 de la llista de reproducció (key)
+#global-key-set-bookmark8=Unset
+
+# Establix l'adreça d'interés 9 de la llista de reproducció (key)
+#key-set-bookmark9=Ctrl-F9
+
+# Establix l'adreça d'interés 9 de la llista de reproducció (key)
+#global-key-set-bookmark9=Unset
+
+# Establix l'adreça d'interés 10 de la llista de reproducció (key)
+#key-set-bookmark10=Ctrl-F10
+
+# Establix l'adreça d'interés 10 de la llista de reproducció (key)
+#global-key-set-bookmark10=Unset
+
+# Reproduïx l'adreça d'interés 1 de la llista de reproducció (key)
+#key-play-bookmark1=F1
+
+# Reproduïx l'adreça d'interés 1 de la llista de reproducció (key)
+#global-key-play-bookmark1=Unset
+
+# Reproduïx l'adreça d'interés 2 de la llista de reproducció (key)
+#key-play-bookmark2=F2
+
+# Reproduïx l'adreça d'interés 2 de la llista de reproducció (key)
+#global-key-play-bookmark2=Unset
+
+# Reproduïx l'adreça d'interés 3 de la llista de reproducció (key)
+#key-play-bookmark3=F3
+
+# Reproduïx l'adreça d'interés 3 de la llista de reproducció (key)
+#global-key-play-bookmark3=Unset
+
+# Reproduïx l'adreça d'interés 4 de la llista de reproducció (key)
+#key-play-bookmark4=F4
+
+# Reproduïx l'adreça d'interés 4 de la llista de reproducció (key)
+#global-key-play-bookmark4=Unset
+
+# Reproduïx l'adreça d'interés 5 de la llista de reproducció (key)
+#key-play-bookmark5=F5
+
+# Reproduïx l'adreça d'interés 5 de la llista de reproducció (key)
+#global-key-play-bookmark5=Unset
+
+# Reproduïx l'adreça d'interés 6 de la llista de reproducció (key)
+#key-play-bookmark6=F6
+
+# Reproduïx l'adreça d'interés 6 de la llista de reproducció (key)
+#global-key-play-bookmark6=Unset
+
+# Reproduïx l'adreça d'interés 7 de la llista de reproducció (key)
+#key-play-bookmark7=F7
+
+# Reproduïx l'adreça d'interés 7 de la llista de reproducció (key)
+#global-key-play-bookmark7=Unset
+
+# Reproduïx l'adreça d'interés 8 de la llista de reproducció (key)
+#key-play-bookmark8=F8
+
+# Reproduïx l'adreça d'interés 8 de la llista de reproducció (key)
+#global-key-play-bookmark8=Unset
+
+# Reproduïx l'adreça d'interés 9 de la llista de reproducció (key)
+#key-play-bookmark9=F9
+
+# Reproduïx l'adreça d'interés 9 de la llista de reproducció (key)
+#global-key-play-bookmark9=Unset
+
+# Reproduïx l'adreça d'interés 10 de la llista de reproducció (key)
+#key-play-bookmark10=F10
+
+# Reproduïx l'adreça d'interés 10 de la llista de reproducció (key)
+#global-key-play-bookmark10=Unset
+
+# Adreça d'interés 1 de la llista de reproducció (string)
+#bookmark1=
+
+# Adreça d'interés 2 de la llista de reproducció (string)
+#bookmark2=
+
+# Adreça d'interés 3 de la llista de reproducció (string)
+#bookmark3=
+
+# Adreça d'interés 4 de la llista de reproducció (string)
+#bookmark4=
+
+# Adreça d'interés 5 de la llista de reproducció (string)
+#bookmark5=
+
+# Adreça d'interés 6 de la llista de reproducció (string)
+#bookmark6=
+
+# Adreça d'interés 7 de la llista de reproducció (string)
+#bookmark7=
+
+# Adreça d'interés 8 de la llista de reproducció (string)
+#bookmark8=
+
+# Adreça d'interés 9 de la llista de reproducció (string)
+#bookmark9=
+
+# Adreça d'interés 10 de la llista de reproducció (string)
+#bookmark10=
+

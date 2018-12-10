@@ -1,0 +1,30 @@
+# This file is sourced by Xsession(5), not executed.
+# Select unity profile if we are in the default session.
+# The default profile is used otherwise.
+
+is_lliurex(){
+    T=$(echo $DESKTOP_SESSION |egrep -io 'lliurex'|uniq)
+    if [ -n "$T" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+
+if is_lliurex; then
+    if [ "x$DESKTOP_SESSION" = "xlliurex-compiz" ]; then
+        dconf write /org/mate/desktop/session/required-components/windowmanager "'compiz'"
+    else
+        dconf reset /org/mate/desktop/session/required-components/windowmanager
+    fi
+
+    if [ "x$LTSP_FATCLIENT" = 'false' ]; then
+	dconf reset /org/mate/desktop/session/required-components/windowmanager
+    fi
+
+    if [ "x$DESKTOP_SESSION" = "xlliurex-compiz" -o "x$XDG_SESSION_DESKTOP" = "xlliurex-compiz" ]; then
+        COMPIZ_CONFIG_PROFILE="mate"
+        export COMPIZ_CONFIG_PROFILE
+    fi
+fi

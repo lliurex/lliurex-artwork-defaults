@@ -1,0 +1,97 @@
+/apps/gnome-terminal/global/profile_list [Default,Solarized_light,Solarized_dark,Monokai,Bright,Chalk,Base16,Eighties,GreenScreen,Mocha,Ocean,Railcasts,Tomorrow]
+
+/apps/gnome-terminal/profiles/Solarized_light/palette #070736364242:#DCDC32322F2F:#858599990000:#B5B589890000:#26268B8BD2D2:#D3D336368282:#2A2AA1A19898:#EEEEE8E8D5D5:#00002B2B3636:#CBCB4B4B1616:#58586E6E7575:#65657B7B8383:#838394949696:#6C6C7171C4C4:#9393A1A1A1A1:#FDFDF6F6E3E3
+/apps/gnome-terminal/profiles/Solarized_light/bold_color_same_as_fg false
+/apps/gnome-terminal/profiles/Solarized_light/background_color #fdfdf6f6e3e3
+/apps/gnome-terminal/profiles/Solarized_light/foreground_color #65657b7b8383
+/apps/gnome-terminal/profiles/Solarized_light/bold_color #58586e6e7575
+/apps/gnome-terminal/profiles/Solarized_light/use_theme_colors false
+/apps/gnome-terminal/profiles/Solarized_light/visible_name "Solarized Light"
+
+/apps/gnome-terminal/profiles/Solarized_dark/palette #070736364242:#DCDC32322F2F:#858599990000:#B5B589890000:#26268B8BD2D2:#D3D336368282:#2A2AA1A19898:#EEEEE8E8D5D5:#00002B2B3636:#CBCB4B4B1616:#58586E6E7575:#65657B7B8383:#838394949696:#6C6C7171C4C4:#9393A1A1A1A1:#FDFDF6F6E3E3
+/apps/gnome-terminal/profiles/Solarized_dark/bold_color_same_as_fg false
+/apps/gnome-terminal/profiles/Solarized_dark/background_color #00002B2B3636
+/apps/gnome-terminal/profiles/Solarized_dark/foreground_color #838394949696
+/apps/gnome-terminal/profiles/Solarized_dark/bold_color #9393a1a1a1a1
+/apps/gnome-terminal/profiles/Solarized_dark/use_theme_colors false
+/apps/gnome-terminal/profiles/Solarized_dark/visible_name "Solarized Dark"
+
+/apps/gnome-terminal/profiles/Monokai/palette #227722882222:#338833883300:#4499448833ee:#7755771155ee:#aa5599ff8855:#ff88ff88ff22:#ff55ff44ff11:#ff99ff88ff55:#ff9922667722:#ffdd997711ff:#ff44bbff7755:#aa66ee2222ee:#aa11eeffee44:#6666dd99eeff:#aaee8811ffff:#cccc66663333
+/apps/gnome-terminal/profiles/Monokai/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Monokai/background_color #227722882222
+/apps/gnome-terminal/profiles/Monokai/foreground_color #ff88ff88ff22
+/apps/gnome-terminal/profiles/Monokai/bold_color #ff88ff88ff22
+/apps/gnome-terminal/profiles/Monokai/use_theme_colors false
+/apps/gnome-terminal/profiles/Monokai/visible_name "Monokai"
+
+/apps/gnome-terminal/profiles/Bright/palette #000000000000:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#ffffffffffff:#ffbb00112200:#ffcc66dd2244:#ffddaa333311:#aa11cc665599:#7766cc77bb77:#66ffbb33dd22:#dd338811cc33:#bbee664433cc
+/apps/gnome-terminal/profiles/Bright/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Bright/background_color #000000000000
+/apps/gnome-terminal/profiles/Bright/foreground_color #ee00ee00ee00
+/apps/gnome-terminal/profiles/Bright/bold_color #ee00ee00ee00
+/apps/gnome-terminal/profiles/Bright/use_theme_colors false
+/apps/gnome-terminal/profiles/Bright/visible_name "Bright"
+
+/apps/gnome-terminal/profiles/Chalk/palette #115511551155:#220022002200:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#ffbb99ffbb11:#eeddaa998877:#ddddbb2266ff:#aacccc226677:#1122ccffcc00:#66ffcc22eeff:#ee11aa33eeee:#ddeeaaff88ff
+/apps/gnome-terminal/profiles/Chalk/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Chalk/background_color #115511551155
+/apps/gnome-terminal/profiles/Chalk/foreground_color #dd00dd00dd00
+/apps/gnome-terminal/profiles/Chalk/bold_color #dd00dd00dd00
+/apps/gnome-terminal/profiles/Chalk/use_theme_colors false
+/apps/gnome-terminal/profiles/Chalk/visible_name "Chalk"
+
+/apps/gnome-terminal/profiles/Base16/palette #115511551155:#220022002200:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#aacc44114422:#dd2288444455:#ff44bbff7755:#9900aa995599:#7755bb55aaaa:#66aa99ffbb55:#aaaa775599ff:#88ff55553366
+/apps/gnome-terminal/profiles/Base16/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Base16/background_color #115511551155
+/apps/gnome-terminal/profiles/Base16/foreground_color #dd00dd00dd00
+/apps/gnome-terminal/profiles/Base16/bold_color #dd00dd00dd00
+/apps/gnome-terminal/profiles/Base16/use_theme_colors false
+/apps/gnome-terminal/profiles/Base16/visible_name "Base16"
+
+/apps/gnome-terminal/profiles/Eighties/palette #22dd22dd22dd:#339933993399:#551155115511:#774477336699:#aa0099ff9933:#dd33dd00cc88:#ee88ee66ddff:#ff22ff00eecc:#ff22777777aa:#ff9999115577:#ffffcccc6666:#9999cccc9999:#6666cccccccc:#66669999cccc:#cccc9999cccc:#dd2277bb5533
+/apps/gnome-terminal/profiles/Eighties/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Eighties/background_color #22dd22dd22dd
+/apps/gnome-terminal/profiles/Eighties/foreground_color #dd33dd00cc88
+/apps/gnome-terminal/profiles/Eighties/bold_color #dd33dd00cc88
+/apps/gnome-terminal/profiles/Eighties/use_theme_colors false
+/apps/gnome-terminal/profiles/Eighties/visible_name "Eighties"
+
+/apps/gnome-terminal/profiles/GreenScreen/palette #000011110000:#000033330000:#000055550000:#000077770000:#000099990000:#0000bbbb0000:#0000dddd0000:#0000ffff0000:#000077770000:#000099990000:#000077770000:#0000bbbb0000:#000055550000:#000099990000:#0000bbbb0000:#000055550000
+/apps/gnome-terminal/profiles/GreenScreen/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/GreenScreen/background_color #000011110000
+/apps/gnome-terminal/profiles/GreenScreen/foreground_color #0000bbbb0000
+/apps/gnome-terminal/profiles/GreenScreen/bold_color #0000bbbb0000
+/apps/gnome-terminal/profiles/GreenScreen/use_theme_colors false
+/apps/gnome-terminal/profiles/GreenScreen/visible_name "Green Screen"
+
+/apps/gnome-terminal/profiles/Mocha/palette #33BB33222288:#553344663366:#664455224400:#77ee770055aa:#bb88aaffaadd:#dd00cc88cc66:#ee99ee11dddd:#ff55eeeeeebb:#ccbb66007777:#dd2288bb7711:#ff44bbcc8877:#bbeebb5555bb:#77bbbbddaa44:#88aabb33bb55:#aa8899bbbb99:#bbbb99558844
+/apps/gnome-terminal/profiles/Mocha/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Mocha/background_color #33BB33222288
+/apps/gnome-terminal/profiles/Mocha/foreground_color #dd00cc88cc66
+/apps/gnome-terminal/profiles/Mocha/bold_color #dd00cc88cc66
+/apps/gnome-terminal/profiles/Mocha/use_theme_colors false
+/apps/gnome-terminal/profiles/Mocha/visible_name "Mocha"
+
+/apps/gnome-terminal/profiles/Ocean/palette #22bb330033bb:#334433dd4466:#44ff55bb6666:#6655773377ee:#aa77aaddbbaa:#cc00cc55ccee:#ddffee11ee88:#eeffff11ff55:#bbff661166aa:#dd0088777700:#eebbccbb88bb:#aa33bbee88cc:#9966bb55bb44:#88ffaa11bb33:#bb4488eeaadd:#aabb77996677
+/apps/gnome-terminal/profiles/Ocean/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Ocean/background_color #22bb330033bb
+/apps/gnome-terminal/profiles/Ocean/foreground_color #cc00cc55ccee
+/apps/gnome-terminal/profiles/Ocean/bold_color #cc00cc55ccee
+/apps/gnome-terminal/profiles/Ocean/use_theme_colors false
+/apps/gnome-terminal/profiles/Ocean/visible_name "Ocean"
+
+/apps/gnome-terminal/profiles/Railcasts/palette #22bb22bb22bb:#227722993355:#33aa44005555:#55aa664477ee:#dd44ccffcc99:#ee66ee11ddcc:#ff44ff11eedd:#ff99ff77ff33:#ddaa44993399:#cccc77883333:#ffffcc6666dd:#aa55cc226611:#551199ff5500:#66dd99ccbbee:#bb66bb33eebb:#bbcc99445588
+/apps/gnome-terminal/profiles/Railcasts/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Railcasts/background_color #22bb22bb22bb
+/apps/gnome-terminal/profiles/Railcasts/foreground_color #ee66ee11ddcc
+/apps/gnome-terminal/profiles/Railcasts/bold_color #ee66ee11ddcc
+/apps/gnome-terminal/profiles/Railcasts/use_theme_colors false
+/apps/gnome-terminal/profiles/Railcasts/visible_name "Railcasts"
+
+/apps/gnome-terminal/profiles/Tomorrow/palette #11dd11ff2211:#228822aa22ee:#337733bb4411:#996699889966:#bb44bb77bb44:#cc55cc88cc66:#ee00ee00ee00:#ffffffffffff:#cccc66666666:#ddee993355ff:#ff00cc667744:#bb55bbdd6688:#88aabbeebb77:#8811aa22bbee:#bb229944bbbb:#aa33668855aa
+/apps/gnome-terminal/profiles/Tomorrow/bold_color_same_as_fg true
+/apps/gnome-terminal/profiles/Tomorrow/background_color #11dd11ff2211
+/apps/gnome-terminal/profiles/Tomorrow/foreground_color #cc55cc88cc66
+/apps/gnome-terminal/profiles/Tomorrow/bold_color #cc55cc88cc66
+/apps/gnome-terminal/profiles/Tomorrow/use_theme_colors false
+/apps/gnome-terminal/profiles/Tomorrow/visible_name "Tomorrow"

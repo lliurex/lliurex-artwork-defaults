@@ -1,0 +1,12 @@
+#lock gnome-theme
+
+/org/mate/desktop/interface/font-name
+/org/mate/desktop/interface/monospace-font-name
+/org/mate/desktop/interface/document-font-name
+/org/mate/desktop/interface/icon-theme
+/org/mate/desktop/interface/gtk-theme
+/org/mate/desktop/interface/menus-have-icons
+
+/org/mate/marco/general/theme
+/org/mate/marco/general/num-workspaces
+/org/mate/marco/general/titlebar-font

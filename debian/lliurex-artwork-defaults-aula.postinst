@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -e
+
+
+
+
+if  [ "$1" = "configure" ] ; then
+
+	#update dconf database, as we droped new settings
+	dconf update
+	
+	#gconf trigger, for those settings still using gconf
+	[ -x /usr/bin/update-gconf-defaults ]  &&  /usr/bin/update-gconf-defaults
+	
+	update-alternatives \
+                --install /usr/share/backgrounds/lliurex-default-background.png lliurex-default-background.png \
+                /usr/share/backgrounds/lliurex/lliurex16-classroom-HD.png 700
+
+	PKG="lliurex-artwork-defaults-aula"
+
+	ORIGINAL_LO_FILE="/usr/lib/libreoffice/program/soffice"
+        NEW_DIVERTED_LO_FILE="/usr/lib/libreoffice/program/soffice.diverted"
+        LLIUREX_FILE="/usr/lib/libreoffice/program/soffice-nolock"
+
+	if [ ! -L "$ORIGINAL_LO_FILE" ]; then
+
+                dpkg-divert --add --package ${PKG} --rename --divert "$NEW_DIVERTED_LO_FILE" "$ORIGINAL_LO_FILE"
+                ln -s "$LLIUREX_FILE" "$ORIGINAL_LO_FILE"
+
+        fi
+
+fi
+
+#DEBHELPER#
+
+exit 0
+

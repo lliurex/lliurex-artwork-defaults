@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+
+if [ "$1" = "remove" ] ; then
+	
+
+	PKG="lliurex-artwork-defaults-client"
+	ORIGINAL_FILE="/etc/init.d/ntp"
+	NEW_DIVERTED_FILE="/etc/init.d/ntp.diverted"
+	LLIUREX_FILE="/bin/true"
+
+
+	if [ -L "$ORIGINAL_FILE" ]; then
+		rm -rf "$ORIGINAL_FILE" || true
+		dpkg-divert --remove --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_FILE"
+		systemctl start ntp || true
+
+	fi
+
+
+
+fi
+#DEBHELPER#
+
+exit 0

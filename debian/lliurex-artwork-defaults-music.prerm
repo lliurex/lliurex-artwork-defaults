@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+
+if [ "$1" = "remove" ] ; then
+
+	update-alternatives \
+                --remove  lliurex-default-background.png  /usr/share/backgrounds/lliurex/lliurex16-music-HD.png
+
+	update-alternatives --auto lliurex-default-background.png
+
+
+fi
+#DEBHELPER#
+
+exit 0

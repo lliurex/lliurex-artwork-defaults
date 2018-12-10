@@ -1,0 +1,40 @@
+#!/bin/bash
+
+set -e
+
+
+
+
+if  [ "$1" = "configure" ] ; then
+
+	# Disabling ntp in clients
+	
+	PKG="lliurex-artwork-defaults-client"
+	ORIGINAL_FILE="/etc/init.d/ntp"
+	NEW_DIVERTED_FILE="/etc/init.d/ntp.diverted"
+	LLIUREX_FILE="/bin/true"
+	
+	if [ ! -L "$ORIGINAL_FILE" ]; then
+
+		systemctl stop ntp || true
+		dpkg-divert --add --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_FILE"
+		ln -s "$LLIUREX_FILE" "$ORIGINAL_FILE"
+
+	fi
+
+
+	#update dconf database, as we droped new settings
+	dconf update
+	
+	#gconf trigger, for those settings still using gconf
+	[ -x /usr/bin/update-gconf-defaults ]  &&  /usr/bin/update-gconf-defaults
+
+
+
+
+fi
+
+#DEBHELPER#
+
+exit 0
+

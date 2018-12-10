@@ -1,0 +1,3 @@
+restricted/restricted.d			/etc/dconf/db/
+restricted/restricted			/etc/dconf/profile/
+

@@ -1,0 +1,49 @@
+#!/bin/bash
+
+set -e
+
+
+APPORT_FILE="/etc/default/apport"
+
+
+if  [ "$1" = "configure" ] ; then
+
+	PKG="lliurex-artwork-defaults-common"
+
+	ORIGINAL_AUTOSTART_FILE="/etc/xdg/autostart/deja-dup-monitor.desktop"
+	DIVERTED_AUTOSTART_FILE="/usr/share/lliurex-artwork-defaults/diversions/deja-dup-monitor.desktop"
+
+	ORIGINAL_LO_MOD="/usr/share/ubuntu-mate/settings-overlay/config/libreoffice/4/user/registrymodifications.xcu"
+	DIVERTED_LO_MOD="/usr/share/lliurex-artwork-defaults/diversions/registrymodifications.xcu"
+	LLIUREX_LO_MOD="/usr/share/lliurex-artwork-defaults/libreoffice/registrymodifications.xcu"
+
+	ORIGINAL_GEOGEBRA="/etc/cron.daily/geogebra"
+	DIVERTED_GEOGEBRA="/usr/share/lliurex-artwork-defaults/diversions/geogebra"
+
+	if [ ! -e "$DIVERTED_AUTOSTART_FILE" ]; then
+
+                dpkg-divert --add --package ${PKG} --rename --divert "$DIVERTED_AUTOSTART_FILE" "$ORIGINAL_AUTOSTART_FILE"
+        fi
+
+	if [ ! -L "$ORIGINAL_LO_MOD" ]; then
+
+                dpkg-divert --add --package ${PKG} --rename --divert "$DIVERTED_LO_MOD" "$ORIGINAL_LO_MOD"
+                ln -s "$LLIUREX_LO_MOD" "$ORIGINAL_LO_MOD"
+
+        fi
+
+	if [ ! -e "$DIVERTED_GEOGEBRA" ]; then
+		dpkg-divert --add --package ${PKG} --rename --divert "$DIVERTED_GEOGEBRA" "$ORIGINAL_GEOGEBRA"
+	fi
+
+
+#	update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/bin/mate-session 60 || true
+#	update-alternatives --set x-session-manager /usr/bin/mate-session || true
+
+
+fi
+
+#DEBHELPER#
+
+exit 0
+

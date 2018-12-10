@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+
+
+
+if  [ "$1" = "configure" ] ; then
+
+	#update dconf database, as we droped new settings
+	dconf update
+	
+	#gconf trigger, for those settings still using gconf
+	[ -x /usr/bin/update-gconf-defaults ]  &&  /usr/bin/update-gconf-defaults
+
+	update-alternatives \
+                --install /usr/share/backgrounds/lliurex-default-background.png lliurex-default-background.png \
+                /usr/share/backgrounds/lliurex/lliurex16-music-HD.png 800
+
+fi
+
+#DEBHELPER#
+
+exit 0
+

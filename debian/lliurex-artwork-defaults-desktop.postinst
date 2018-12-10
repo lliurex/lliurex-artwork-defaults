@@ -1,0 +1,44 @@
+#!/bin/bash
+
+set -e
+
+
+APPORT_FILE="/etc/default/apport"
+
+
+if  [ "$1" = "configure" ] ; then
+
+	#update dconf database, as we droped new settings
+	dconf update
+	
+	#gconf trigger, for those settings still using gconf
+	[ -x /usr/bin/update-gconf-defaults ]  &&  /usr/bin/update-gconf-defaults
+
+	# Xsession diversion to solve the Unity problem
+	# Unity must be diverted 
+
+	# First create the directory for destination desktops
+	[ -d "/usr/share/diverted-sessions/" ] || mkdir -p "/usr/share/diverted-sessions/"
+
+#	ORIGINAL_UNITY_FILE="/usr/share/xsessions/mate.desktop"
+#	NEW_DIVERTED_FILE="/usr/share/diverted-sessions/mate.desktop"
+#	PKG="lliurex-artwork-defaults-desktop"
+#	dpkg-divert --add --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_UNITY_FILE"
+
+	update-alternatives \
+		--install /usr/share/backgrounds/lliurex-default-background.png lliurex-default-background.png \
+		/usr/share/backgrounds/lliurex/lliurex16-desktop-HD.png 500
+
+
+	update-icon-caches /usr/share/icons/hicolor/scalable/ || true 
+        gtk-update-icon-cache /usr/share/icons/hicolor || true
+	
+        # DISABLE APPORT
+        echo "enabled=0" > "$APPORT_FILE"
+
+fi
+
+#DEBHELPER#
+
+exit 0
+

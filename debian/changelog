@@ -1,0 +1,1017 @@
+lliurex-artwork-defaults (5.5.4) xenial; urgency=high
+
+  * Removing old xdg autostart file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 06 Sep 2018 09:34:44 +0200
+
+lliurex-artwork-defaults (5.5.3) xenial; urgency=high
+
+  * Diverting geogebra cron file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 12 Mar 2018 17:17:04 +0100
+
+lliurex-artwork-defaults (5.5.2) xenial; urgency=high
+
+  * Removed gva icons from this package. They are now in lliurex-gva-icons
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 26 Oct 2017 09:27:22 +0200
+
+lliurex-artwork-defaults (5.5.1) xenial; urgency=high
+
+  * Updated alternative level for gva background
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 25 Oct 2017 17:35:34 +0200
+
+lliurex-artwork-defaults (5.5) xenial; urgency=high
+
+  * Updating gva postinst
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 25 Oct 2017 13:03:47 +0200
+
+lliurex-artwork-defaults (5.4.9) xenial; urgency=high
+
+  * Going back to 5.4.7
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 20 Oct 2017 14:48:40 +0200
+
+lliurex-artwork-defaults (5.4.8) xenial; urgency=high
+
+  * Updating whiskermenu to 1.7.3-0ppa1
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 20 Oct 2017 14:33:47 +0200
+
+lliurex-artwork-defaults (5.4.7) xenial; urgency=high
+
+  * Enabling plank zoom 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 13 Oct 2017 11:37:03 +0200
+
+lliurex-artwork-defaults (5.4.6) xenial; urgency=medium
+
+  * linking human to elementary LO theme
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 29 Sep 2017 13:08:38 +0200
+
+lliurex-artwork-defaults (5.4.5) xenial; urgency=high
+
+  * Setting libreoffice theme to elementary
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 28 Sep 2017 11:51:08 +0200
+
+lliurex-artwork-defaults (5.4.4) xenial; urgency=high
+
+  * Fixing old libreoffice configuration
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 27 Sep 2017 12:28:19 +0200
+
+lliurex-artwork-defaults (5.4.3) xenial; urgency=high
+
+  * Forcing libreoffice not to use file lock functionality
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 21 Sep 2017 12:29:06 +0200
+
+lliurex-artwork-defaults (5.4.2) xenial; urgency=medium
+
+  * Removed deprecated locale
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 22 Jun 2017 09:21:15 +0200
+
+lliurex-artwork-defaults (5.4.1) xenial; urgency=high
+
+  * Adding link to mate-session named mate-session-compiz to fix semi clients desktop session selection.
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 12 Jun 2017 10:02:34 +0200
+
+lliurex-artwork-defaults (5.4) xenial; urgency=high
+
+  * Forcing new value for x-session-manager alternative
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 12 Jun 2017 09:28:26 +0200
+
+lliurex-artwork-defaults (5.3.9) xenial; urgency=high
+
+  * Disabling ntp in clients 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 08 Jun 2017 11:36:24 +0200
+
+lliurex-artwork-defaults (5.3.8) xenial; urgency=high
+
+  * Moving marco selection for thin clients to Xsession instead of xdg-autostart
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 05 Jun 2017 12:08:38 +0200
+
+lliurex-artwork-defaults (5.3.7) xenial; urgency=high
+
+  * Setting default desktop session alternative
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 29 May 2017 10:03:36 +0200
+
+lliurex-artwork-defaults (5.3.6) xenial; urgency=high
+
+  * Moving mo diversions to a different path
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 20 Mar 2017 17:45:46 +0100
+
+lliurex-artwork-defaults (5.3.5) xenial; urgency=high
+
+  * Fixed compiz environment variable
+  * Renamed lliurex-compiz session icon the RIGHT way
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 13 Mar 2017 15:48:23 +0100
+
+lliurex-artwork-defaults (5.3.4) xenial; urgency=high
+
+  * Fixed lliurex-compiz session icon
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 10 Mar 2017 09:53:09 +0100
+
+lliurex-artwork-defaults (5.3.3) xenial; urgency=high
+
+  * Marco is now the default WM. 
+  * Compiz doesn't have hotcorner configurations anymore. 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 10 Mar 2017 09:30:05 +0100
+
+lliurex-artwork-defaults (5.3.2-1) xenial; urgency=medium
+
+  * New procedure to allow have no efects session without wm --replace
+  * Add session icon
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 21 Feb 2017 17:41:21 +0100
+
+lliurex-artwork-defaults (5.3.2) xenial; urgency=medium
+
+  * New session without efects 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 20 Feb 2017 17:28:10 +0100
+
+lliurex-artwork-defaults (5.3.1) xenial; urgency=high
+
+  * Fixed diversion
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 01 Feb 2017 18:33:12 +0100
+
+lliurex-artwork-defaults (5.3) xenial; urgency=high
+
+  * Fixed rules when copying so files to install dir
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 01 Feb 2017 10:25:35 +0100
+
+lliurex-artwork-defaults (5.2-4) xenial; urgency=high
+
+  * Adding tilda and deja-dup autostart diversions
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 01 Feb 2017 10:11:17 +0100
+
+lliurex-artwork-defaults (5.2-3) xenial; urgency=high
+
+  * This might be the one that translates whiskermenu at last
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 19 Jan 2017 13:44:38 +0100
+
+lliurex-artwork-defaults (5.2-2) xenial; urgency=high
+
+  * Removed 'Add to panel' option from whiskermenu
+  * Trying to support whiskermenu translations 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 13 Jan 2017 09:35:50 +0100
+
+lliurex-artwork-defaults (5.2-1) xenial; urgency=medium
+
+  * Fix path to wallpaper in pime,infantil,gva
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 12 Jan 2017 13:32:50 +0100
+
+lliurex-artwork-defaults (5.2) xenial; urgency=medium
+
+  * Fix path to wallpaper in pime,infantil,gva
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 12 Jan 2017 12:04:36 +0100
+
+lliurex-artwork-defaults (5.1) xenial; urgency=high
+
+  * Removing workaround plugin from compiz 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 30 Nov 2016 17:25:29 +0100
+
+lliurex-artwork-defaults (5.0.52) xenial; urgency=high
+
+  * Add diversion for ubuntu-mate-welcome 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 03 Nov 2016 14:17:09 +0100
+
+lliurex-artwork-defaults (5.0.51) xenial; urgency=medium
+
+  * Added config of vim
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Mon, 31 Oct 2016 10:04:52 +0100
+
+lliurex-artwork-defaults (5.0.50) xenial; urgency=medium
+
+  * Remove lliurex-do from depends
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 05 Oct 2016 12:20:39 +0200
+
+lliurex-artwork-defaults (5.0.49) xenial; urgency=medium
+
+  * Try to fix lost focus when screenlocking
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 05 Oct 2016 08:29:25 +0200
+
+lliurex-artwork-defaults (5.0.48) xenial; urgency=medium
+
+  * Added switch to marco as wm for thin clients
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 27 Sep 2016 17:47:41 +0200
+
+lliurex-artwork-defaults (5.0.47) xenial; urgency=medium
+
+  * Modify whiskermenu default settings 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 16 Sep 2016 10:07:08 +0200
+
+lliurex-artwork-defaults (5.0.46) xenial; urgency=medium
+
+  * Disabled showing plank settings into docker by default
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 15 Sep 2016 14:43:22 +0200
+
+lliurex-artwork-defaults (5.0.45) xenial; urgency=high
+
+  * Adding whiskermenu translations 
+  * Fixing top-edge sticky maximization
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 29 Aug 2016 13:11:18 +0200
+
+lliurex-artwork-defaults (5.0.44.6-1) xenial; urgency=medium
+
+  * Add armhf binary libs missing
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 26 Aug 2016 15:01:13 +0200
+
+lliurex-artwork-defaults (5.0.44.6) xenial; urgency=medium
+
+  * added armhf binary libs
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 26 Aug 2016 14:52:38 +0200
+
+lliurex-artwork-defaults (5.0.44.5) xenial; urgency=high
+
+  * Modifying image paths
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 27 Jul 2016 12:54:06 +0200
+
+lliurex-artwork-defaults (5.0.44.4) xenial; urgency=high
+
+  * Added lightdm theme dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 27 Jul 2016 12:31:31 +0200
+
+lliurex-artwork-defaults (5.0.44.3) xenial; urgency=high
+
+  * fixing plank skel path
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 26 Jul 2016 12:36:51 +0200
+
+lliurex-artwork-defaults (5.0.44.2) xenial; urgency=high
+
+  * Fixing whisker for i386
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 26 Jul 2016 09:39:58 +0200
+
+lliurex-artwork-defaults (5.0.44.1) xenial; urgency=high
+
+  * Changing plank hide mode
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 26 Jul 2016 09:03:53 +0200
+
+lliurex-artwork-defaults (5.0.44) xenial; urgency=high
+
+  * Adding default plank launchers
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 25 Jul 2016 13:43:34 +0200
+
+lliurex-artwork-defaults (5.0.43.4) xenial; urgency=high
+
+  * Enabling lliurex-session-manager
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 25 Jul 2016 10:33:36 +0200
+
+lliurex-artwork-defaults (5.0.43.3) xenial; urgency=high
+
+  * Fixed default desktop
+  * Added whiskermenu mate plugin dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 15 Jul 2016 14:39:17 +0200
+
+lliurex-artwork-defaults (5.0.43.2) xenial; urgency=high
+
+  * Adding whiskermenu icon 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 15 Jul 2016 13:54:58 +0200
+
+lliurex-artwork-defaults (5.0.43.1) xenial; urgency=high
+
+  * Adding compiz profile variable
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 15 Jul 2016 13:49:04 +0200
+
+lliurex-artwork-defaults (5.0.43) xenial; urgency=high
+
+  * Mate configuration. Doc, DOC! I'm back, I'm back FROM the future
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 15 Jul 2016 12:38:34 +0200
+
+lliurex-artwork-defaults (5.0.42) xenial; urgency=medium
+
+  * Add package lliurex-artwork-defaults-aula to control file 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 22 Jun 2016 10:07:08 +0200
+
+lliurex-artwork-defaults (5.0.41-2) xenial; urgency=medium
+
+  * Improve thin client detection
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 20 Jun 2016 12:10:26 +0200
+
+lliurex-artwork-defaults (5.0.41) xenial; urgency=medium
+
+  * Add logout whiskermenu wrapper to xfce-logout-session to avoid reboots into ltsp thin clients
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 17 Jun 2016 10:03:10 +0200
+
+lliurex-artwork-defaults (5.0.40) xenial; urgency=high
+
+  * Adding remaining kwin configurations
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 09 Jun 2016 14:32:53 +0200
+
+lliurex-artwork-defaults (5.0.39.1) xenial; urgency=high
+
+  * Trying to prevent focus loss when using kwin
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 07 Jun 2016 14:44:49 +0200
+
+lliurex-artwork-defaults (5.0.39) xenial; urgency=high
+
+  * Fixing classroom alternatives
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 06 Jun 2016 13:18:15 +0200
+
+lliurex-artwork-defaults (5.0.38) xenial; urgency=high
+
+  * Added xfce4-terminal configuration
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 06 Jun 2016 11:37:50 +0200
+
+lliurex-artwork-defaults (5.0.37ubuntu1) xenial; urgency=medium
+
+  * Added whiskermenu conf to lliurex-effects session
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 06 Jun 2016 10:14:39 +0200
+
+lliurex-artwork-defaults (5.0.37) xenial; urgency=high
+
+  * Updated border delay
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 03 Jun 2016 13:12:20 +0200
+
+lliurex-artwork-defaults (5.0.36) xenial; urgency=high
+
+  * Adding artwork-themes-base dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 Jun 2016 10:24:27 +0200
+
+lliurex-artwork-defaults (5.0.35) xenial; urgency=high
+
+  * First try with new lliurex configuration
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 31 May 2016 12:34:34 +0200
+
+lliurex-artwork-defaults (5.0.34) xenial; urgency=high
+
+  * Migrate tonew version
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 28 Jan 2016 12:39:24 +0100
+
+lliurex-artwork-defaults (5.0.34) trusty; urgency=high
+
+  * Change compositing-manager to false in metacity gva 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 05 Nov 2015 14:50:36 +0100
+
+lliurex-artwork-defaults (5.0.33) trusty; urgency=high
+
+  * Added local admins to policykit
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Wed, 07 Oct 2015 08:52:12 +0200
+
+lliurex-artwork-defaults (5.0.32) trusty; urgency=high
+
+  * interactive on power 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 07 Oct 2015 07:01:27 +0200
+
+lliurex-artwork-defaults (5.0.31) trusty; urgency=low
+
+  * Added admins group as a valid policy kit administration group for classrooms profiles
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Tue, 06 Oct 2015 14:15:39 +0200
+
+lliurex-artwork-defaults (5.0.30) trusty; urgency=high
+
+  * Updated to everywhere  
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 05 Oct 2015 19:06:53 +0200
+
+lliurex-artwork-defaults (5.0.29) trusty; urgency=high
+
+  * Testing for Orriols 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 05 Oct 2015 13:02:28 +0200
+
+lliurex-artwork-defaults (5.0.28) trusty; urgency=medium
+
+  * Fixed numlock satus
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Mon, 05 Oct 2015 09:22:47 +0200
+
+lliurex-artwork-defaults (5.0.27) trusty; urgency=medium
+
+  * Setting a default keyboard layout
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Fri, 02 Oct 2015 09:40:01 +0200
+
+lliurex-artwork-defaults (5.0.26) trusty; urgency=high
+
+  *  Add new icon for GVA LibreOffice Formacion
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 23 Sep 2015 12:44:41 +0200
+
+lliurex-artwork-defaults (5.0.25) trusty; urgency=high
+
+  * Using a less restricting frozen technology
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Sep 2015 17:17:46 +0200
+
+lliurex-artwork-defaults (5.0.24) trusty; urgency=high
+
+  * Moved frozen system to aula profile, in order to work on both server and client
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 23 Jul 2015 10:22:17 +0200
+
+lliurex-artwork-defaults (5.0.23) trusty; urgency=low
+
+  * Added a client freeze system, based on read only dconf profiles
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Wed, 22 Jul 2015 09:14:17 +0200
+
+lliurex-artwork-defaults (5.0.22) trusty; urgency=high
+
+  * Updated theme for pime (now enterprise) 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 29 Jun 2015 11:11:10 +0200
+
+lliurex-artwork-defaults (5.0.21) trusty; urgency=high
+
+  * Testing nautilus crashes 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 03 Jun 2015 18:34:16 +0200
+
+lliurex-artwork-defaults (5.0.20) trusty; urgency=high
+
+  * Adding new desktops for GVA, MASTIN & Registro
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 27 May 2015 17:02:47 +0200
+
+lliurex-artwork-defaults (5.0.19) trusty; urgency=high
+
+  * Updated org.gnome.metacity
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 21 May 2015 10:30:41 +0200
+
+lliurex-artwork-defaults (5.0.18) trusty; urgency=high
+
+  * Updated compositing manager on gva 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 20 May 2015 16:19:24 +0200
+
+lliurex-artwork-defaults (5.0.17) trusty; urgency=high
+
+  * Fixed inet connection in terminal on classroom clients
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 19 May 2015 21:42:01 +0200
+
+lliurex-artwork-defaults (5.0.16) trusty; urgency=high
+
+  * Updated syntax 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 11 May 2015 12:43:32 +0200
+
+lliurex-artwork-defaults (5.0.15) trusty; urgency=high
+
+  * Updated syntax 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 11 May 2015 11:11:25 +0200
+
+lliurex-artwork-defaults (5.0.14) trusty; urgency=high
+
+  * Added icons only
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 11 May 2015 10:02:46 +0200
+
+lliurex-artwork-defaults (5.0.13) trusty; urgency=high
+
+  * Added Window-switcher to active plugins on compiz
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 11 May 2015 08:57:39 +0200
+
+lliurex-artwork-defaults (5.0.12) trusty; urgency=high
+
+  * Updated email 
+
+ -- José A. Murcia <joamuran@gmail.com>  Fri, 08 May 2015 13:28:46 +0200
+
+lliurex-artwork-defaults (5.0.11) trusty; urgency=high
+
+  * I am ANGEL 
+
+ -- José A. Murcia <joamuran@Tao>  Fri, 08 May 2015 13:27:05 +0200
+
+lliurex-artwork-defaults (5.0.10) trusty; urgency=high
+
+  * fixing xfce4 background
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 08 May 2015 12:29:29 +0200
+
+lliurex-artwork-defaults (5.0.9) trusty; urgency=high
+
+  * Removed "display" on text activation on classroom settings 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 06 May 2015 18:25:31 +0200
+
+lliurex-artwork-defaults (5.0.8) trusty; urgency=high
+
+  * Fixed path on musica settings 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 01 May 2015 18:54:19 +0200
+
+lliurex-artwork-defaults (5.0.7) trusty; urgency=high
+
+  * Updated gva and musica settings
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 23 Apr 2015 12:42:43 +0200
+
+lliurex-artwork-defaults (5.0.6) trusty; urgency=high
+
+  * Updated aula and infantil settings
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 23 Apr 2015 11:30:34 +0200
+
+lliurex-artwork-defaults (5.0.5) trusty; urgency=high
+
+  * Updated with ALT+F2 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 21 Apr 2015 12:25:16 +0200
+
+lliurex-artwork-defaults (5.0.4) trusty; urgency=high
+
+  [ Enrique Medina Gremaldos ]
+  * Using lliurex future icon theme
+
+  [ Angel Berlanas Vicente ]
+  * Added show program list
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 16 Apr 2015 18:22:25 +0200
+
+lliurex-artwork-defaults (5.0.3) trusty; urgency=high
+
+  * Updated background names
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 16 Apr 2015 11:29:41 +0200
+
+lliurex-artwork-defaults (5.0.2) trusty; urgency=high
+
+  * Updated font family 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 16 Apr 2015 10:01:19 +0200
+
+lliurex-artwork-defaults (5.0.1) trusty; urgency=medium
+
+  * Updated new theme dependency
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Wed, 15 Apr 2015 13:54:09 +0200
+
+lliurex-artwork-defaults (5.0.0) trusty; urgency=medium
+
+  * Using future green themes
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Wed, 15 Apr 2015 12:46:25 +0200
+
+lliurex-artwork-defaults (4.9.1~rc11) trusty; urgency=high
+
+  * Fixed Syntax 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 14 Apr 2015 17:24:05 +0200
+
+lliurex-artwork-defaults (4.9.1~rc10) trusty; urgency=high
+
+  * Updated version from pandora 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 14 Apr 2015 14:14:48 +0200
+
+lliurex-artwork-defaults (4.9.1~rc9) trusty; urgency=high
+
+  * Updated with dependence of xfce4-appfinder 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 13:45:04 +0100
+
+lliurex-artwork-defaults (4.9.1~rc8) trusty; urgency=high
+
+  * Updated defaults
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 10:34:50 +0100
+
+lliurex-artwork-defaults (4.9.1~rc7) trusty; urgency=high
+
+  * Updated defaults for gva
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 10:33:08 +0100
+
+lliurex-artwork-defaults (4.9.1~rc6) trusty; urgency=high
+
+  * Added GVCronos
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 10:03:48 +0100
+
+lliurex-artwork-defaults (4.9.1~rc5) trusty; urgency=high
+
+  * Updated apport (again)
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 05 Mar 2015 08:24:19 +0100
+
+lliurex-artwork-defaults (4.9.1~rc4) trusty; urgency=high
+
+  * Fixed keyboard
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 02 Mar 2015 08:18:20 +0100
+
+lliurex-artwork-defaults (4.9.1~rc3) trusty; urgency=high
+
+  * new dependecies for xfce4 session
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 27 Feb 2015 14:18:57 +0100
+
+lliurex-artwork-defaults (4.9.1~rc2) trusty; urgency=high
+
+  * Updated infantil with beta 
+  * Added restricted profile (only for testing)
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 20 Feb 2015 08:26:32 +0100
+
+lliurex-artwork-defaults (4.9.1~rc1) trusty; urgency=high
+
+  * Setting alive the desktop
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 19 Feb 2015 13:56:05 +0100
+
+lliurex-artwork-defaults (4.9.0) trusty; urgency=high
+
+  * Changed backgrounds to 15.05 beta
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Tue, 17 Feb 2015 08:33:21 +0100
+
+lliurex-artwork-defaults (4.0.8.2) trusty; urgency=high
+
+  * Adding sudoers environment variables to fix http_proxy problems when using apt
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 25 Nov 2014 17:00:46 +0100
+
+lliurex-artwork-defaults (4.0.8.1) trusty; urgency=high
+
+  * Uploaded to trusty
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 02 Oct 2014 08:40:23 +0200
+
+lliurex-artwork-defaults (4.0.8) precise; urgency=high
+
+  * Restoring desktop permissions
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 22 Sep 2014 09:17:43 +0200
+
+lliurex-artwork-defaults (4.0.7) trusty; urgency=high
+
+  * Modify GVA Icons
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Fri, 19 Sep 2014 09:52:34 +0200
+
+lliurex-artwork-defaults (4.0.6) precise; urgency=medium
+
+  * Replaced dependency ttf-inconsolata with fonts-inconsolata
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 18 Sep 2014 13:33:39 +0200
+
+lliurex-artwork-defaults (4.0.5) precise; urgency=high
+
+  * Create & Lock icons
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Fri, 12 Sep 2014 13:02:12 +0200
+
+lliurex-artwork-defaults (4.0.4) precise; urgency=high
+
+  * Adding files to block gnome-theme & gnome-panel
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 10 Sep 2014 17:50:07 +0200
+
+lliurex-artwork-defaults (4.0.3) precise; urgency=high
+
+  * Block wallpaper and stretched it for all resolutions
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 09 Sep 2014 13:42:28 +0200
+
+lliurex-artwork-defaults (4.0.2) precise; urgency=high
+
+  * Fixed gva path name
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Wed, 02 Jul 2014 10:57:04 +0200
+
+lliurex-artwork-defaults (4.0.1) precise; urgency=high
+
+  * Updated defaults for GVA
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 30 Jun 2014 16:35:52 +0200
+
+lliurex-artwork-defaults (4.0) precise; urgency=high
+
+  * Removed pime plymouth dependency as there are no plans for it
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 23 Jun 2014 14:13:26 +0200
+
+lliurex-artwork-defaults (4.0~alpha2) precise; urgency=low
+
+  * Added lliurex banners as dep
+  * Updated package description to 1406
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 16 Jun 2014 14:25:32 +0200
+
+lliurex-artwork-defaults (4.0~alpha) precise; urgency=high
+
+  * Added GVA defaults
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 13 Jun 2014 14:19:17 +0200
+
+lliurex-artwork-defaults (3.6.0) precise; urgency=low
+
+  * Enabled menus and buttons icons
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 28 Mar 2014 08:25:55 +0100
+
+lliurex-artwork-defaults (3.5~alpha6) precise; urgency=high
+
+  * Added ftp_proxy and https_proxy
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 18 Nov 2013 13:08:13 +0100
+
+lliurex-artwork-defaults (3.5~alpha5) precise; urgency=high
+
+  * Updated http_proxy Value on clients
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 18 Nov 2013 12:20:31 +0100
+
+lliurex-artwork-defaults (3.5~alpha4) precise; urgency=low
+
+  * Testing with another settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 12 Nov 2013 09:05:35 +0100
+
+lliurex-artwork-defaults (3.5~alpha3) precise; urgency=low
+
+  * Testing new xfce desktop settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 11 Nov 2013 13:34:39 +0100
+
+lliurex-artwork-defaults (3.5~alpha2) precise; urgency=high
+
+  * Updated lock-delay to 3600 seconds
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 25 Oct 2013 13:41:32 +0200
+
+lliurex-artwork-defaults (3.4~alpha2) precise; urgency=high
+
+  * Updated time to screensaver (3600 seconds) 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 18 Oct 2013 10:55:40 +0200
+
+lliurex-artwork-defaults (3.4~alpha) precise; urgency=low
+
+  * Added plymouth and radiance dependencies
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 18 Jul 2013 17:21:12 +0200
+
+lliurex-artwork-defaults (3.3~alpha2) precise; urgency=low
+
+  * Fixed lite background path
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 18 Jul 2013 11:25:25 +0200
+
+lliurex-artwork-defaults (3.3~alpha) precise; urgency=low
+
+  * Fine tunning xfce desktop settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 12 Jul 2013 12:04:01 +0200
+
+lliurex-artwork-defaults (3.2~beta1) precise; urgency=low
+
+  * Added lliurex-do to infantil settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 01 Jul 2013 11:14:20 +0200
+
+lliurex-artwork-defaults (3.1~beta1) precise; urgency=low
+
+  * Added plymouth as artwork dependence
+  * Fixed toggle maximize metacity key binding
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 28 Jun 2013 12:43:45 +0200
+
+lliurex-artwork-defaults (3.0~betau2) precise; urgency=high
+
+  * Added musica settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 27 Jun 2013 13:53:27 +0200
+
+lliurex-artwork-defaults (3.0~beta) precise; urgency=high
+
+  * Added pime settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 27 Jun 2013 12:40:13 +0200
+
+lliurex-artwork-defaults (3.0~alpha) precise; urgency=low
+
+  * Added show desktop applet and resized to 50 px
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 24 Jun 2013 12:24:53 +0200
+
+lliurex-artwork-defaults (2.9~alpha) precise; urgency=low
+
+  * Using aula specific background 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 24 Jun 2013 10:05:18 +0200
+
+lliurex-artwork-defaults (2.8~alpha) precise; urgency=low
+
+  * Splitted aula settings into two packages
+  * Fixed infantil settings, as it was completly useless
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 20 Jun 2013 09:21:12 +0200
+
+lliurex-artwork-defaults (2.7~alpha) precise; urgency=low
+
+  * Added infantil look n feel (wip) 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 18 Jun 2013 08:35:00 +0200
+
+lliurex-artwork-defaults (2.6.4~beta) precise; urgency=high
+
+  * Fixed dconf proxy path
+  * Added aula settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 14 Jun 2013 11:29:17 +0200
+
+lliurex-artwork-defaults (2.6.3) precise; urgency=low
+
+  * Added nautilus executable behaviour key
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 07 Jun 2013 09:52:02 +0200
+
+lliurex-artwork-defaults (2.6.2) precise; urgency=low
+
+  * Fixed some keys
+  * Added gnome terminal profiles (gconf engine)
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 03 Jun 2013 08:48:46 +0200
+
+lliurex-artwork-defaults (2.6.1) precise; urgency=high
+
+  * Fixed installation path 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 30 May 2013 08:53:40 +0200
+
+lliurex-artwork-defaults (2.6~alpha) precise; urgency=low
+
+  * Added client default package
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Wed, 22 May 2013 14:10:01 +0200
+
+lliurex-artwork-defaults (2.5~alpha) precise; urgency=low
+
+  * Fixed paths, added session desktop and fixed setup files 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 21 May 2013 09:54:23 +0200
+
+lliurex-artwork-defaults (2.4.7~alpha) precise; urgency=low
+
+  * Fixed default font 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 20 May 2013 12:37:31 +0200
+
+lliurex-artwork-defaults (2.4.6~alpha) precise; urgency=low
+
+  * Added the best font config 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 20 May 2013 08:22:15 +0200
+
+lliurex-artwork-defaults (2.4.5~alpha) precise; urgency=low
+
+  * Improved XFCE settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Fri, 17 May 2013 11:29:25 +0200
+
+lliurex-artwork-defaults (2.4.4~alpha2) precise; urgency=low
+
+  * Removed monospace font size 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 15 May 2013 07:56:26 +0200
+
+lliurex-artwork-defaults (2.4.4~alpha) precise; urgency=low
+
+  * Added XFCE (in alpha stage) customization package
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 14 May 2013 10:17:32 +0200
+
+lliurex-artwork-defaults (2.4.3) precise; urgency=low
+
+  * Added cursor_theme key for gconf, solving cursor not showing on non-compiz desktops
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 25 Mar 2013 12:20:54 +0100
+
+lliurex-artwork-defaults (2.4.2) precise; urgency=low
+
+  * Using gconf defaults, instead, as triggering dconf at build time was breaking the package
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 21 Mar 2013 11:56:27 +0100
+
+lliurex-artwork-defaults (2.4.1) precise; urgency=low
+
+  * Postinstall turn arround to trigger gconf synchronization
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 21 Mar 2013 08:50:26 +0100
+
+lliurex-artwork-defaults (2.4) precise; urgency=low
+
+  * Fixed lintian warnings 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 14 Mar 2013 10:07:07 +0100
+
+lliurex-artwork-defaults (2.3) precise; urgency=low
+
+  * Added postinst and prerm diversion for unity and others xsessions 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 14 Mar 2013 09:58:19 +0100
+
+lliurex-artwork-defaults (2.2) precise; urgency=low
+
+  *  Updated dependencies and dconf default settings
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 11 Mar 2013 09:04:54 +0100
+
+lliurex-artwork-defaults (2.1.5) precise; urgency=low
+
+  * Updated dependencies 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Wed, 06 Mar 2013 09:30:21 +0100
+
+lliurex-artwork-defaults (2.1.4) precise; urgency=low
+
+  * fixed postinstall file name 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 28 Feb 2013 10:20:22 +0100
+
+lliurex-artwork-defaults (2.1.3) precise; urgency=low
+
+  * misspelling on postinstall commands 
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 26 Feb 2013 13:22:01 +0100
+
+lliurex-artwork-defaults (2.1.2) precise; urgency=low
+
+  * Added dconf as a dependency
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Mon, 25 Feb 2013 10:09:00 +0100
+
+lliurex-artwork-defaults (2.1.1) precise; urgency=low
+
+  * Fixed rules file
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Wed, 20 Feb 2013 12:55:27 +0100
+
+lliurex-artwork-defaults (2.1) precise; urgency=low
+
+  * Using dconf for default settings, instead of gsettings as this one does not provide a mechanism for configuring gnome panels
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Wed, 20 Feb 2013 10:10:34 +0100
+
+lliurex-artwork-defaults (2.0) unstable; urgency=low
+
+  * Testing release
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 05 Jul 2012 13:58:52 +0200

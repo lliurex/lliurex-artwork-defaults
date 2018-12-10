@@ -1,0 +1,72 @@
+Source: lliurex-artwork-defaults
+Section: x11
+Priority: optional
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+
+Package: lliurex-artwork-defaults-desktop
+Architecture: all
+Section: x11
+Depends: ${misc:Depends}, ttf-ubuntu-font-family, dconf-tools, lliurex-artwork-cursors-default, lliurex-artwork-backgrounds-desktop , lliurex-artwork-icons, lliurex-artwork-theme-base, lliurex-artwork-theme-desktop, lliurex-artwork-plymouth-desktop, lliurex-artwork-banners, mugshot, lliurex-session-manager, lliurex-artwork-defaults-common, lliurex-lightdm-theme
+Description: LliureX's 19 defaults Desktop look
+ LliureX's 19 default dconf settings
+
+Package: lliurex-artwork-defaults-common
+Architecture: any
+Section: x11
+Description: LliureX 19 common files
+ LliureX artwork common files
+
+Package: lliurex-artwork-defaults-aula
+Architecture: all 
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-theme-aula, lliurex-artwork-backgrounds-aula , lliurex-artwork-plymouth-aula 
+Description: LliureX's 19 defaults aula look 
+ LliureX's 19 default dconf settings for aula
+
+Package: lliurex-artwork-defaults-client
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-aula, n4d
+Description: LliureX's 19 defaults client settings
+ LliureX's 19 default dconf settings for client
+ 
+Package: lliurex-artwork-defaults-infantil
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-theme-infantil, lliurex-artwork-backgrounds-infantil , lliurex-artwork-plymouth-infantil
+Description: LliureX's 19 defaults infantil look
+ LliureX's 19 default dconf settings for infantil
+
+Package: lliurex-artwork-defaults-musica
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-theme-musica, lliurex-artwork-backgrounds-musica , lliurex-artwork-plymouth-musica
+Description: LliureX's 19 defaults musica look
+ LliureX's 19 default dconf settings for musica
+
+Package: lliurex-artwork-defaults-pime
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-backgrounds-pime , lliurex-artwork-theme-gva 
+Description: LliureX's 19 defaults pime look
+ LliureX's 19 default dconf settings for pime
+ 
+Package: lliurex-artwork-defaults-gva
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-backgrounds-gva , lliurex-artwork-theme-gva
+Description: LliureX's 19 defaults GVA look
+ LliureX's 19 default dconf 
+ Special settings for GVA and block wallpaper
+ Lock icons.
+
+Package: lliurex-artwork-defaults-restricted
+Architecture: all
+Section: x11
+Depends: lliurex-artwork-defaults-desktop, lliurex-artwork-backgrounds-gva , lliurex-artwork-window-pime
+Description: LliureX's 19 defaults restricted settings
+ LliureX's 19 default dconf 
+ Special settings for restricted users
+ Lock icons.

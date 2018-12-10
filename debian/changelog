@@ -1,3 +1,10 @@
+lliurex-artwork-defaults (6.0) bionic; urgency=medium
+
+  * Merged with keep-skel-plugins
+  * Clean old files
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Mon, 10 Dec 2018 13:33:13 +0100
+
 lliurex-artwork-defaults (5.5.4) xenial; urgency=high
 
   * Removing old xdg autostart file

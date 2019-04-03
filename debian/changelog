@@ -1,3 +1,9 @@
+lliurex-artwork-defaults (6.2) bionic; urgency=high
+
+  * Disabling old no-icons-in-libreoffice fix
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 Apr 2019 15:54:15 +0200
+
 lliurex-artwork-defaults (6.1) bionic; urgency=high
 
   * Small fix to use new artwork defaults

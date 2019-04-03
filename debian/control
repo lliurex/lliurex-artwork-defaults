@@ -8,7 +8,8 @@ Standards-Version: 4.1.2
 Package: lliurex-artwork-defaults-desktop
 Architecture: all
 Section: x11
-Depends: ${misc:Depends}, ttf-ubuntu-font-family, dconf-tools, lliurex-artwork-cursors-default, lliurex-artwork-backgrounds-desktop , lliurex-artwork-icons, lliurex-artwork-theme-base, lliurex-artwork-theme-desktop, lliurex-artwork-plymouth-desktop, lliurex-artwork-banners, mugshot, lliurex-session-manager, lliurex-artwork-defaults-common, lliurex-lightdm-theme
+#Depends: ${misc:Depends}, ttf-ubuntu-font-family, dconf-tools, lliurex-artwork-cursors-default, lliurex-artwork-backgrounds-desktop , lliurex-artwork-icons, lliurex-artwork-theme-base, lliurex-artwork-theme-desktop, lliurex-artwork-plymouth-desktop, lliurex-artwork-banners, mugshot, lliurex-session-manager, lliurex-artwork-defaults-common, lliurex-lightdm-theme
+Depends: lliurex-artwork-defaults-common, lliurex-desktop-color-scheme, lliurex-desktop-defaults, lliurex-desktop-kwin-theme, lliurex-desktop-plasma-look-and-feel, lliurex-desktop-plasma-theme, lliurex-desktop-wallpaper, lliurex-desktops-keeper
 Description: LliureX's 19 defaults Desktop look
  LliureX's 19 default dconf settings
 

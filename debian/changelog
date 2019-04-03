@@ -1,3 +1,9 @@
+lliurex-artwork-defaults (6.1) bionic; urgency=high
+
+  * Small fix to use new artwork defaults
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 Apr 2019 12:38:18 +0200
+
 lliurex-artwork-defaults (6.0) bionic; urgency=medium
 
   * Merged with keep-skel-plugins

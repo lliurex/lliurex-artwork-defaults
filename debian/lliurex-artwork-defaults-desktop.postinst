@@ -25,9 +25,9 @@ if  [ "$1" = "configure" ] ; then
 #	PKG="lliurex-artwork-defaults-desktop"
 #	dpkg-divert --add --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_UNITY_FILE"
 
-	update-alternatives \
-		--install /usr/share/backgrounds/lliurex-default-background.png lliurex-default-background.png \
-		/usr/share/backgrounds/lliurex/lliurex16-desktop-HD.png 500
+#	update-alternatives \
+#		--install /usr/share/backgrounds/lliurex-default-background.png lliurex-default-background.png \
+#		/usr/share/backgrounds/lliurex/lliurex16-desktop-HD.png 500
 
 
 	update-icon-caches /usr/share/icons/hicolor/scalable/ || true 

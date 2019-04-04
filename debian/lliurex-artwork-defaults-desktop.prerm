@@ -5,11 +5,11 @@ set -e
 
 if [ "$1" = "remove" ] ; then
 
-	update-alternatives \
-                --remove  lliurex-default-background.png  /usr/share/backgrounds/lliurex/lliurex16-desktop-HD.png
+#	update-alternatives \
+#                --remove  lliurex-default-background.png  /usr/share/backgrounds/lliurex/lliurex16-desktop-HD.png
 
-	update-alternatives --auto lliurex-default-background.png
-
+#	update-alternatives --auto lliurex-default-background.png
+	true	
 
 fi
 #DEBHELPER#

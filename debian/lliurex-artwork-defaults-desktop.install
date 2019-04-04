@@ -1,5 +1,2 @@
-desktop/lliurex.d	/etc/dconf/db/
-desktop/user		/etc/dconf/profile/
-gconf/95_lliurex	/usr/share/gconf/defaults/
 session-icon/*		/usr/share/icons/hicolor/scalable/places/
 vim/*			/etc/vim/
